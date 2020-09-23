@@ -41,7 +41,7 @@
         @bukStyles()
         @bukScripts()
     </head>
-    <body class="bg-red-150 overflow-x-hidden font-sans">
+    <body class="overflow-x-hidden font-sans text-black">
         @yield('content')
 
         @include('partials.gtm-body')
