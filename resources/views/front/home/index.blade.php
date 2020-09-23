@@ -56,7 +56,7 @@
                     </p>
 
                     <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">
-                        Brought to you by open source veterans <a href="">Brent Roose</a> & <a href="">Freek Van der Herten</a> from Spatie.
+                        Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a> & <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from Spatie.
                     </p>
                 </div>
             </div>
