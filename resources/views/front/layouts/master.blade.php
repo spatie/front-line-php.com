@@ -9,11 +9,11 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title') - Laravel beyond CRUD</title>
+        <title>@yield('title') - Front Line PHP</title>
         <meta name="description" content="@yield('description')">
         <link rel="canonical" href="{{ url()->current() }}"/>
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600|Jost:400,600,700&amp;display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
@@ -25,7 +25,7 @@
         <meta name="twitter:title" content="@yield('title')"/>
         <meta name="twitter:description"
         content="@yield('description')"/>
-        <meta name="twitter:image" content="https://laravel-beyond-crud.com/images/social-card.jpg"/>
+        <meta name="twitter:image" content="https://front-line-php.com/images/social-card.jpg"/>
 
         <meta property="og:site_name" content="Laravel beyond CRUD">
         <meta property="og:locale" content="en_US">
@@ -34,8 +34,7 @@
         <meta property="og:title" content="@yield('title')"/>
         <meta property="og:description"
             content="@yield('description')"/>
-        <meta property="og:image" content="https://laravel-beyond-crud.com/images/social-card.jpg"/>
-        <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+        <meta property="og:image" content="https://front-line-php.com/images/social-card.jpg"/>
 
         <script src="/js/alpine.js" defer></script>
 

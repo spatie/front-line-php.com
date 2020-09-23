@@ -2,7 +2,7 @@
 require __DIR__.'/vendor/autoload.php';
 \Dotenv\Dotenv::create(\Illuminate\Support\Env::getRepository(), __DIR__)->load();
 
-$server = "laravel-beyond-crud.com";
+$server = "front-line-php.com";
 $userAndServer = 'forge@'. $server;
 $repository = "spatie/{$server}";
 $baseDir = "/home/forge/{$server}";
