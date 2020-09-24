@@ -16,7 +16,7 @@ class SubscribeToEmailListController
 
         $response = Http::post("https://spatie.be/mailcoach/subscribe/" .config('services.mailcoach.subscription_uuid'), [
             'email' => $request->email,
-            'tags' => 'laravel-beyond-crud-waiting-list',
+            'tags' => 'front-line-php-waiting-list',
         ]);
 
         if (! $response->successful()) {
