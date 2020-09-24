@@ -69,22 +69,13 @@
 /* List styles */
 
 .markup-lists ul > li,
-.markup-lists-alt ul > li,
 .markup-ul > li,
 .markup-ul-alt > li {
     padding-left: 1.15em;
 }
 
 .markup-lists ul > li:before,
-.markup-lists-alt .markup-lists ul > li:before,
 .markup-ul > li:before {
-    content: "✓";
-    @apply absolute;
-    @apply left-0;
-}
-
-.markup-lists-alt ul > li:before,
-.markup-ul-alt > li:before {
     content: "•";
     @apply absolute;
     @apply left-0;
@@ -95,10 +86,15 @@
 }
 
 .markup-lists ol > li,
-.markup-lists-alt ol > li,
 .markup-ol > li {
     counter-increment: customOl;
     padding-left: 1.5em;
+}
+
+.markup-lists ol > li:before {
+    @apply absolute;
+    @apply left-0;
+    content: counter(customOl) ".";
 }
 
 .markup-lists ol > li:before,
@@ -112,17 +108,13 @@
     @apply items-center;
     @apply justify-center;
     @apply font-semibold;
-    @apply text-white;
+    @apply text-black;
+    @apply bg-blue-500;
+    @apply bg-opacity-25;
     font-size: 0.65em;
     width: 1.5em;
     height: 1.5em;
     transform: translateY(0.35em);
-}
-
-.markup-lists-alt ol > li:before {
-    @apply absolute;
-    @apply left-0;
-    content: counter(customOl) ".";
 }
 
 .markup-lists-spaced ol,

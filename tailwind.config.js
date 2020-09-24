@@ -13,6 +13,7 @@ module.exports = {
             black: "#2c1b1d",
             spatie: '#197593',
             yellow: {
+                100: '#fcf8e7',
                 500: '#f0de38'
             },
             purple: {
@@ -22,7 +23,13 @@ module.exports = {
             blue: {
                 200: '#daf1f5',
                 500: '#0756b0'
-            }
+            },
+            green: {
+                500: '#75ad20'
+            },
+            red: {
+                500: '#9c1c13'
+            },
         },
 
         extend: {

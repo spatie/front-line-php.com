@@ -8,6 +8,92 @@
 
 @import "./utilities/markup.css";
 
+button {
+    transition: transform 0.2s ease;
+    transform-origin: 0 50%;  
+}
+
+button:hover {
+    transform: scaleX(1.03);
+}
+
+button:active {
+    transform: scaleX(1.06);
+}
+
+.input {
+    @apply h-12;
+    @apply text-purple-500;
+    background-image: linear-gradient(to right, #fff 20%, #daf1f5);
+}
+
+.input:focus {
+    background-image: none;
+    @apply outline-none;
+    @apply bg-yellow-100;
+}
+
+.input::placeholder {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+.input:focus::placeholder {
+    transform: translateX(25%);
+    opacity: 0;
+}
+
+.moving-button { 
+    transition: transform 0.2s ease;
+    transform-origin: 0 50%;  
+}
+
+.moving-button .button { 
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.input:invalid + .moving-button,
+.input:invalid + .moving-button .button {
+    transition-delay: 1s
+}
+
+.input:valid + .moving-button .button { 
+    @apply bg-yellow-500;
+    @apply text-black;
+}
+
+@screen md {
+    .moving-button { 
+        @apply absolute; 
+        @apply right-0; 
+        @apply top-0; 
+    }
+
+    .input:valid + .moving-button {
+        transform: translateX(100%);
+    }
+}
+
+.button {
+    transition: transform 0.2s ease;
+    transform-origin: 0 50%;  
+    @apply h-12;
+    @apply inline-flex;
+    @apply items-center;
+    @apply px-6;
+    @apply font-display;
+    @apply text-xl;
+    @apply text-white;
+    @apply text-opacity-90;
+    @apply bg-purple-500;
+}
+
+.marker {
+    @apply -mx-1 ;
+    @apply px-1 ;
+    @apply inline-block;
+    background-image: linear-gradient(to right,theme('colors.yellow.500'), theme('colors.yellow.500')33 80%);
+}
+
 @keyframes glow-1{
     0% {
         opacity: 0;
@@ -78,78 +164,4 @@
 
 .line-6 {
     animation: glow-2 8.5s ease-in-out 5s infinite both;
-}
-
-.input {
-    @apply h-12;
-    @apply text-purple-500;
-    background-image: linear-gradient(to right, #fff 20%, #daf1f5);
-}
-
-.input:focus {
-    background-image: none;
-    @apply outline-none;
-    @apply bg-yellow-500;
-    @apply bg-opacity-25;
-}
-
-.input::placeholder {
-    transition: transform 0.5s ease, opacity 0.5s ease;
-  }
-
-.input:focus::placeholder {
-    transform: translateX(25%);
-    opacity: 0;
-}
-
-.input:focus + .moving-button {
-    transform: translateX(25%);
-}
-
-@screen md{
-    .input:focus + .moving-button {
-        transform: translateX(75%);
-    }
-}
-
-.moving-button { 
-    @apply absolute; 
-    @apply right-0; 
-    @apply top-0; 
-    transition: transform 0.2s ease;
-    transform-origin: 0 50%;  
-}
-
-button {
-    transition: transform 0.2s ease;
-    transform-origin: 0 50%;  
-}
-
-button:hover {
-    transform: scaleX(1.02);
-}
-
-button:active {
-    transform: scaleX(1.05);
-}
-
-.button {
-    transition: transform 0.2s ease;
-    transform-origin: 0 50%;  
-    @apply h-12;
-    @apply inline-flex;
-    @apply items-center;
-    @apply px-6;
-    @apply font-display;
-    @apply text-xl;
-    @apply text-white;
-    @apply text-opacity-90;
-    @apply bg-purple-500;
-}
-
-.marker {
-    @apply -mx-1 ;
-    @apply px-1 ;
-    @apply inline-block;
-    background-image: linear-gradient(to right,theme('colors.yellow.500'), theme('colors.yellow.500')33 80%);
 }

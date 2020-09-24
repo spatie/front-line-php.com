@@ -2,14 +2,12 @@
 
 @section('title', 'Terms of use')
 
-@section('description', 'Terms of use for Laravel Beyond CRUD — learn how to create your own Laravel packages')
+@section('description', 'Terms of use for Front Line PHP — learn how to create your own Laravel packages')
 
 @section('article')
 
 @markdown
-#  Terms of Use Laravel Beyond CRUD
-
-These Laravel Beyond CRUD terms of use (the “Terms of Use”) apply to all services provided through <https://front-line-php.com/terms-of-use> by Spatie BV, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Beyond CRUD” “we”, “us” or “our”.
+These Front Line PHP terms of use (the “Terms of Use”) apply to all services provided through <https://front-line-php.com/terms-of-use> by Spatie BV, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Front Line PHP” “we”, “us” or “our”.
 
 By buying and downloading our video course, You explicitly agree to these Terms of Use.
 
