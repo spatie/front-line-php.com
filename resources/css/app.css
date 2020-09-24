@@ -165,3 +165,14 @@ button:active {
 .line-6 {
     animation: glow-2 8.5s ease-in-out 5s infinite both;
 }
+
+::-webkit-scrollbar { width: 4px; }
+
+::-webkit-scrollbar-track {
+  background: #d8eff3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d8eff3 0%, #4530a8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8eff3', endColorstr='#bae2e9', GradientType=1);
+}
