@@ -18,5 +18,4 @@
     </div>
 
     @include('partials.newsletter') 
-    @include('partials.newsletter-feedback')
 </section>
