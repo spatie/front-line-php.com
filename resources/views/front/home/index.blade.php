@@ -8,8 +8,10 @@
 
 
     <header>
-        @include('partials.header')
-    
+        <div class="h-32">
+            @include('partials.header')
+        </div>
+
         <div class="mx-auto max-w-5xl px-4 sm:px-16 py-16">
             <div class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 inline-flex items-center bg-yellow-500 px-8 h-10 font-bold whitespace-no-wrap text-xl">
                 Coming december 2020

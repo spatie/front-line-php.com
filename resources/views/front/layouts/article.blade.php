@@ -4,14 +4,18 @@
 
 
     <header>
-        @include('partials.header')
+        <div class="h-32">
+                @include('partials.header')
+            <div class="mx-auto max-w-5xl px-4 sm:px-16 h-32 flex items-center">
+                <a href="/" class="font-display leading-none text-white text-xl">
+                    <span>&larr;</span> Front Line PHP
+                </a>
+            </div>
+        </div>
     
         <div class="mx-auto max-w-5xl px-4 sm:px-16 py-16">
-            <p class="font-display text-5xl sm:text-6xl md:text-7xl leading-none">
-                Front Line PHP
-            </p>
-            <h1 class="mt-2 font-semibold text-3xl sm:text-4xl leading-snug">
-                @yield('title')
+            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl leading-none">
+                 @yield('title')
             </h1>
         </div>
     </header>

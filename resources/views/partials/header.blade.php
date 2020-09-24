@@ -1,3 +1,1 @@
-    <div class="border-b border-black border-opacity-50">
-        <img class="w-full h-32 object-cover" src="/images/header-2400.jpg">
-    </div>
+<img class="absolute top-0 left-0 w-full h-full object-cover" src="/images/header-2400.jpg">
