@@ -2,7 +2,7 @@
 
 @section('title', 'Writing modern web applications in PHP 8')
 
-@section('description', 'Writing modern web applications in PHP 8 by Brent Roose, accompagnied with videos by Freek Van der Herten.')
+@section('description', 'Writing modern web applications in PHP 8 by Brent Roose, accompanied by videos by Freek Van der Herten.')
 
 @section('content')
 
@@ -53,11 +53,11 @@
 
                 <div class="md:ml-8 mt-24">
                     <p class="text-3xl font-semibold">
-                        An <span class="marker">ebook</span> on cutting edge tactics in PHP 8, accompagnied by <span class="marker">videos</span> with pratical use cases.
+                        An <span class="marker">ebook</span> on cutting edge tactics in PHP 8, accompanied by <span class="marker">videos</span> and practical examples.
                     </p>
 
                     <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">
-                        Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a> & <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from Spatie.
+                        Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a> & <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from <a class="bg-none" href="https://spatie.be">Spatie</a>.
                     </p>
                 </div>
             </div>

@@ -9,13 +9,13 @@
     <input type="email" id="email" name="email" aria-label="Email" required placeholder="Email" class="input flex-grow px-3 text-lg">
     <div class="moving-button">
         <button type="submit" class="button">
-            Subcribe
+            Subscribe
         </button>
     </div>
 </form>
 
 <div class="mt-2 text-sm text-white opacity-50">
-    No spam —we won't sell your email.
+    No spam — we won't sell your email.
 </div>
 
 <div x-data="{ open: true }" x-show="open">       
