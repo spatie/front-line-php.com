@@ -20,7 +20,7 @@
                 Front Line PHP
             </h1>
             <p class="mt-2 font-semibold text-3xl sm:text-4xl leading-snug">
-                Writing modern applications 
+                Writing modern applications
                 <br>
                 with PHP 8
             </p>
@@ -42,11 +42,11 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <template x-if="open">
                     <div style="background-color:rgba(0,0,0,0.75)" class="fixed inset-0 p-8 lg:p-16 z-50 fix-z flex items-center justify-center" @keydown.window.escape="open = false">
                         <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl">×</button>
-                        <iframe src="https://player.vimeo.com/video/434969839?autoplay=1" class="w-full h-full" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" @click.away="open = false">
+                        <iframe src="https://player.vimeo.com/video/463793201?autoplay=1" class="w-full h-full" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" @click.away="open = false">
                         </iframe>
                     </div>
                 </template>
@@ -67,5 +67,5 @@
     </main>
 
     @include('partials.footer')
-    
+
 @endsection
