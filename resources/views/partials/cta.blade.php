@@ -7,15 +7,15 @@
         <div style="left: 75%" class="line-5 | absolute top-0 bg-black bg-opacity-75 w-1 h-full"></div>
         <div style="left: 83%" class="line-6 | absolute top-0 bg-black bg-opacity-25 w-1 h-full"></div>
     </div>
-        
+
     <h2 class="text-6xl font-display mb-8 leading-none text-white text-opacity-90">
         Walk up front
     </h2>
     <div class="block text-xl font-semibold leading-relaxed text-white text-opacity-90">
         Get previews and early access to the ebook and videos.
         <br>
-        Launching december 2020.    
+        Launching December 2020.
     </div>
 
-    @include('partials.newsletter') 
+    @include('partials.newsletter')
 </section>
