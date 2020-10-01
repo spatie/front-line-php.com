@@ -14,7 +14,7 @@
     <div class="block text-xl font-semibold leading-relaxed text-white text-opacity-90">
         Get previews and early access to the ebook and videos.
         <br>
-        Launching December 2020.
+        Launching early December 2020.
     </div>
 
     @include('partials.newsletter')
