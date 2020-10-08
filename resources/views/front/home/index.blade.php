@@ -63,7 +63,7 @@
         </div>
     </section>
 
-    <section class="mb-16">
+    <section class="mb-24">
         <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-none">Table of contents</h2>
 
         <div class="mt-8 grid md:grid-cols-3 gap-8">
