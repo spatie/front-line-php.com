@@ -33,7 +33,7 @@
             <img alt="Front Line PHP" srcset="/images/cover-1200.jpg 1200w, /images/cover-600.jpg 600w" sizes="500px, (min-width:768px) 45vw" src="/images/cover-1200.jpg" class="mx-auto w-full max-w-xl shadow-2xl">
         </div>
 
-        <div class="md:-mt-16 pb-24" x-data="{ open: false }">
+        <div class="md:-mt-16 pb-16" x-data="{ open: false }">
             <div class="w-full bg-black group cursor-hand" @click="open = true">
                 <img srcset="/images/intro-1600.jpg 1600w, /images/intro-800.jpg 800w" sizes="100vw, (min-width:768px) 45vw" src="/images/intro-1600.jpg" class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" alt="Video still">
                 <div class="absolute -mb-6 bottom-0 w-full flex items-center justify-center">
@@ -64,13 +64,16 @@
     </section>
 
     <section class="mb-16">
-        <h2 class="text-3xl font-semibold">What we'll cover</h2>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-none">Table of contents</h2>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="mt-8 grid md:grid-cols-3 gap-8">
             <div>
-                <h3 class="marker font-semibold text-xl">Part I: PHP, the Language</h3>
+                <h3 class="font-semibold text-xl">
+                    <div class="text-3xl font-display leading-none">Part I</div>
+                    PHP, the Language
+                </h3>
 
-                <ol class="mt-6 list-decimal pl-6">
+                <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
                     <li>PHP today</li>
                     <li>New versions</li>
                     <li>PHP's type system</li>
@@ -85,9 +88,12 @@
             </div>
 
             <div>
-                <h3 class="marker font-semibold text-xl">Part II: Building With PHP</h3>
+                <h3 class="font-semibold text-xl">
+                    <div class="text-3xl font-display leading-none">Part II</div>
+                    Building With PHP
+                </h3>
 
-                <ol start=11 class="mt-6 list-decimal pl-6">
+                <ol start=11 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
                     <li>Object oriented PHP</li>
                     <li>MVC Frameworks</li>
                     <li>Dependency Injection</li>
@@ -97,18 +103,21 @@
             </div>
 
             <div>
-                <h3 class="marker font-semibold text-xl">Part III: PHP In Depth</h3>
+                <h3 class="font-semibold text-xl">
+                    <div class="text-3xl font-display leading-none">Part III</div>
+                    PHP In Depth
+                </h3>
 
-                <ol start=16 class="mt-6 list-decimal pl-6">
+                <ol start=16 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
                     <li>FFI</li>
-<li>JIT</li>
-<li>Preloading</li>
-<li>Internals</li>
-<li>Type variance</li>
-<li>Async PHP</li>
-<li>Event driven development</li>
-<li>Functional programming</li>
-<li>Cheat Sheet</li>
+                    <li>JIT</li>
+                    <li>Preloading</li>
+                    <li>Internals</li>
+                    <li>Type variance</li>
+                    <li>Async PHP</li>
+                    <li>Event driven development</li>
+                    <li>Functional programming</li>
+                    <li>Cheat Sheet</li>
                 </ol>
             </div>
         </div>

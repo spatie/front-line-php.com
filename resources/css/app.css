@@ -94,6 +94,13 @@ button:active {
     background-image: linear-gradient(to right,theme('colors.yellow.500'), theme('colors.yellow.500')33 80%);
 }
 
+.marker-purple {
+    @apply -mx-1 ;
+    @apply px-1 ;
+    @apply inline-block;
+    background-image: linear-gradient(to right,theme('colors.purple.400')66, theme('colors.purple.400')00 80%);
+}
+
 @keyframes glow-1{
     0% {
         opacity: 0;
