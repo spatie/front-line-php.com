@@ -1,8 +1,8 @@
 @extends('front.layouts.master')
 
-@section('title', 'Writing modern web applications with PHP 8')
+@section('title', 'Building modern web applications with PHP 8')
 
-@section('description', 'Writing modern web applications with PHP 8 by Brent Roose, accompanied by videos by Freek Van der Herten.')
+@section('description', 'Building modern web applications with PHP 8 by Brent Roose, accompanied by videos by Freek Van der Herten.')
 
 @section('content')
 
@@ -20,7 +20,7 @@
             Front Line PHP
         </h1>
         <p class="mt-2 font-semibold text-3xl sm:text-4xl leading-snug">
-            Writing modern applications
+            Building modern applications
             <br>
             with PHP 8
         </p>
