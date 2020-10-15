@@ -9,9 +9,9 @@
 @markdown
 These Front Line PHP terms of use (the “Terms of Use”) apply to all services provided through <https://front-line-php.com/terms-of-use> by Spatie BV, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Front Line PHP” “we”, “us” or “our”.
 
-By buying and downloading our video course, You explicitly agree to these Terms of Use.
+By buying and downloading our Course, You explicitly agree to these Terms of Use.
 
-We reserve however the right, in our sole discretion, to change, modify, add or remove these Terms of Use or parts of it at any time. When we make material changes to the Terms of Use, we shall send You a clear notice, as appropriate given the particular circumstances. Therefore, You should check these Terms of Use periodically for modifications. By buying and using our video course after having modified these Terms of Use, we presume You have read and agreed to accept these modifications. If You do not agree to these Terms of Use, You should not use our video course any longer and remove all courses from your devices (computer, laptop, tablet, smartphone, etc.) instantly.
+We reserve however the right, in our sole discretion, to change, modify, add or remove these Terms of Use or parts of it at any time. When we make material changes to the Terms of Use, we shall send You a clear notice, as appropriate given the particular circumstances. Therefore, You should check these Terms of Use periodically for modifications. By buying and using our Course after having modified these Terms of Use, we presume You have read and agreed to accept these modifications. If You do not agree to these Terms of Use, You should not use our Course any longer and remove it from your devices (computer, laptop, tablet, smartphone, etc.) instantly.
 
 We shall make sure that the latest version of these Terms of Use shall always be available on <https://front-line-php.com/terms-of-use>.
 
