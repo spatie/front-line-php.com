@@ -22,7 +22,7 @@ If you have any questions or concerns, you may contact us by at [info@spatie.be]
 The following definitions apply to these Terms of Use:
 
 1. “Fee”: the amount to be paid to Spatie to obtain the complete video course. This fee shall always be available at <https://front-line-php.com>;
-2. “Course”: the Front Line PHP ebook and video's as an educational product listed and described on <https://front-line-php.com>, including all course material through the ebook and videos;
+2. “Course”: the Front Line PHP ebook and videos as an educational product listed and described on <https://front-line-php.com>, including all course material through the ebook and videos;
 3. “Terms of Use”: these terms of use;
 4. “You”: any user will buy the course and who will use it for educational purposes.
 
