@@ -9,7 +9,7 @@
 @markdown
 This the Front Line PHP privacy and cookie policy. Front Line PHP is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596, hereafter referred to as Spatie.
 
-Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://front-line-php.com](https://front-line-php.com/); by creating a Spatie account on URL [https://spatie.be](https://spatie.be/) , by contacting us by email/phone, by subscribing to our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
+Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://front-line-php.com](https://front-line-php.com/); by creating a Spatie account on URL [https://spatie.be/register](https://spatie.be/register), by contacting us by email/phone, by subscribing to our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
 
 ## 1. General terms
 
@@ -47,7 +47,7 @@ You are not obliged to provide us with your data; however, in case you refuse to
 3.2. Direct marketing:
 We only use our data for direct marketing purposes, in case you have given your explicit and prior consent (“opt-in”).
 
-Spatie may use your email address to send marketing as well as other news relating to the Front Line PHP or some of the other Spatie products if you subscribed the direct mailing list with consent. You can withdraw your consent at any time, without any reasoning and free of charge by, for example, clicking on the unsubscribe button provided at the bottom of each promotional email message.
+Spatie may use your email address to send marketing as well as other news relating to Front Line PHP or some of the other Spatie products if you subscribed the direct mailing list with consent. You can withdraw your consent at any time, without any reasoning and free of charge by, for example, clicking on the unsubscribe button provided at the bottom of each promotional email message.
 
 3.3. Transfer to third parties:
 In case of whole or partial reorganization or transfer of Spatie’s activities, whereby the Front Line PHP Course reorganizes, transfers, ceases her business activity or in case of bankruptcy of Spatie, your data may be transferred to new entities or third parties.
@@ -99,9 +99,9 @@ This is without prejudice to a provision before the Civil Court. If you have suf
 
 6.1. We have adopted safety measures on both technical and organizational level to avoid the destruction, the loss, the forgery, the adjustment, the non-authorized access, or the notification of the personal data by accident to a third party, as well as the non-authorized processing of these data.
 
-6.2. Spatie shall not be liable in any way for direct or indirect damages caused by a wrongful or improper use of the Front Line PHP Video Course by a third party.
+6.2. Spatie shall not be liable in any way for direct or indirect damages caused by a wrongful or improper use of the Front Line PHP Course by a third party.
 
-6.3. At any time, you must comply with the safety standards, for instance, by avoiding all non-authorized access to your Spatie account that is required to buy the Frontline PHP Course. You are solely responsible for the use of your own Spatie account.
+6.3. At any time, you must comply with the safety standards, for instance, by avoiding all non-authorized access to your Spatie account that is required to buy the Front Line PHP Course. You are solely responsible for the use of your own Spatie account.
 
 ## 7. Cookies
 
@@ -115,10 +115,10 @@ As a result of recent amendments to the law, all websites focusing on certain pa
 
 7.3: Different kinds of cookies used on our website.
 
-- Essential website cookies: these cookies are necessary to give you as a visitor an optimal experience on our website. Spatie needs these cookies for some critical features like the payment of the Video Course.
+- Essential website cookies: these cookies are necessary to give you as a visitor an optimal experience on our website. Spatie needs these cookies for some critical features like the payment of the Front Line PHP Course.
 - XSRF-token: this cookie validates the user session and is necessary to guarantee safety during the website visit to avoid a cross-site request forgery. The cookie expires after 2 hours.
 - Session cookie: this is a unique cookie to identify a specific website visitor for the duration of his visit (session). The cookie expires after 2 hours.
-- Paddle_js cookies: cookies that are necessary for our payment integration with Paddle. These cookies are used during the checkout process when you buy the Video Course. More information on Paddle can be found on their website: [paddle.com](http://paddle.com/).
+- Paddle_js cookies: cookies that are necessary for our payment integration with Paddle. These cookies are used during the checkout process when you buy the Front Line PHP Course. More information on Paddle can be found on their website: [paddle.com](http://paddle.com/).
 - Analytics cookies: we use analytics cookies to collect information about the use of our website. These analytics cookies provide us useful information to enhance your experience and website visit. All of the analytics cookies are provided by a third-party because we have integrated their services into our website.
 - _ga cookie: this is a Google Analytics cookie. We use it to measure and distinguish different users on our website. That way, we can calculate the different visitors on our website. The cookie expires after one week.
 - _gid cookie: this is a Google Analytics cookie. We use this cookie to measure and distinguish different users on our website. That way, we can calculate the different visitors on our website. The cookie expires after 24 hours.
