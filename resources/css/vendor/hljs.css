@@ -106,7 +106,7 @@
     background: 0 0;
 }
 .hljs-highlight.yellow {
-    background-image: linear-gradient(to right,theme('colors.yellow.500')55, theme('colors.yellow.500')22 70%);
+    background-image: linear-gradient(to right,theme('colors.yellow.500')55, theme('colors.yellow.500')00 calc(100vw - 2rem));
 }
 .hljs-highlight.blue {
     background-color: #aff;
