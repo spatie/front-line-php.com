@@ -48,6 +48,9 @@ module.exports = {
             },
             fontSize: {
                 '7xl' : '6rem'
+            },
+            maxWidth: {
+                article: 'calc(66ch + 8rem)',
             }
         }
     },

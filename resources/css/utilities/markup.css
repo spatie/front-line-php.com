@@ -166,14 +166,19 @@
 
 .markup-code pre {
     @apply font-mono;
-    @apply my-8;
-    @apply px-8;
-    @apply py-6;
+    @apply my-12;
+    @apply p-6;
     @apply overflow-x-auto;
     @apply bg-white;
     font-size: 0.85em;
     line-height: 1.8;
     background-color: rgba(0,0,0,0.025);
+}
+
+@screen md {
+    .markup-code pre {
+        width: calc(33ch + 50vw + 1.5rem);
+    }
 }
 
 .markup-code pre code {

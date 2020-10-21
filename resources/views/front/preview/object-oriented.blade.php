@@ -7,11 +7,11 @@
 @section('article')
 
 <div class="text-lg">
-    <p>Alan Kay, the inventor of the term "object-oriented programming", told a story once during a talk more than 20 years ago. You can build a dog house using only a hammer, nails, planks, and just a little bit of skill. I figure even I would be able to build it given enough time. Once you've built it you've earned the skills and know-how, and could apply it to other projects. Next, you want to build a cathedral, using the same approach with your hammer, nails, and planks. It's a 100 times larger, but you've done this before — right? It'll only take a little longer.</p>
+    <p>Alan Kay, the inventor of the term “object-oriented programming”, told a story once during a talk more than 20 years ago. You can build a dog house using only a hammer, nails, planks, and just a little bit of skill. I figure even I would be able to build it given enough time. Once you've built it you've earned the skills and know-how, and could apply it to other projects. Next, you want to build a cathedral, using the same approach with your hammer, nails, and planks. It's a 100 times larger, but you've done this before — right? It'll only take a little longer.</p>
 
     <p>While the scale went up by a factor of 100, its mass went up by a factor of 1.000.000 and its strength only by 10.000. Inevitably, the building will collapse. Some people plaster over the rubble, make it into a pyramid and say it was the plan all along; but you and I know what really went on.</p>
 
-    <p>Alan used this metaphor to explain a critical problem he saw with "modern OOP" 20 years ago. I think it still holds today: we've taken the solution to a problem — OO code — we've scaled it by a factor of 100, and expected it to work the same way. Today still, we don't think enough about architecture — which is rather crucial if you're building a cathedral — we use the OO solutions we learned without any extra thought. Most of us learned OO in isolation with small examples, and rarely at scale. In most real life projects, you cannot simply apply the patterns you've learned and expect everything to fall into place the same way it did with Animals, Cats, and Dogs.</p>
+    <p>Alan used this metaphor to explain a critical problem he saw with “modern OOP” 20 years ago. I think it still holds today: we've taken the solution to a problem — OO code — we've scaled it by a factor of 100, and expected it to work the same way. Today still, we don't think enough about architecture — which is rather crucial if you're building a cathedral — we use the OO solutions we learned without any extra thought. Most of us learned OO in isolation with small examples, and rarely at scale. In most real life projects, you cannot simply apply the patterns you've learned and expect everything to fall into place the same way it did with Animals, Cats, and Dogs.</p>
     <p>This reckless scaling of OO code is what cause many people to voice their disapproval of it in recent years. Personally I believe OOP is as good a tool as any other — functional programming being the modern-day popular contestant — <em>if</em> used correctly.</p>
     <p>My takeaway from Alan's vision is that each object is a little program on its own, with its own internal state. Objects send messages between each other — packages of immutable data — which other objects can interpret and react to. You can't write all code this way, and that's fine — it's fine to not blindly follow these rules.
         Still, I have experienced the positive impact of this mindset first hand. Thinking of objects as little standalone programs, I started writing parts of my code in a different style. I hope that, now that we're going to look object oriented PHP, you'll keep Alan's ideas in mind. Don't blindly apply patterns and principles. Try to look at what you're building as a whole.</p>
@@ -20,13 +20,13 @@
         Alan's vision only described objects — it didn't describe how those objects were created. Classes were added later as a convenient way to manage objects, but they are only an implementation detail, not the core idea of OOP. With classes came inheritance, another a useful tool when used correctly. That hasn't been the case though: the problem Alan tried to address 20 years ago still exists today.</p>
     <p>One of the acclaimed strengths of OOP is that is models our code in ways humans think about the world. In reality though, we rarely think in terms of abstractions and inheritance. Instead of using inheritance in places where it actually makes sense, we've been abusing it as a way to share code, and to configure objects in an obscure way.
         I'm going to show you a great example that illustrates this problem, though I want to say up front that it isn't my own: it's Sandi Metz's, a great teacher on the subject of OOP. Let's take a look.</p>
-    <p>There's a children's nursery rhyme called "The House That Jack Built" (it's also a horror movie but that's unrelated).
+    <p>There's a children's nursery rhyme called “The House That Jack Built” (it's also a horror movie but that's unrelated).
         It starts like this:</p>
     <pre><code class="language- hljs ">This is the house that Jack built.</code></pre>
     <p>Every iteration there's a sentence added to it:</p>
     <pre><code class="language- hljs ">This is the malt that lay in
         the house that Jack built.</code></pre>
-    <p>And next</p>
+    <p>And next:</p>
     <pre><code class="language- hljs ">This is the rat that ate
         the malt that lay in
         the house that Jack built.</code></pre>
@@ -95,12 +95,12 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
 </span>{
     <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">phrase</span><span class="hljs-params">(<span class="hljs-highlight  type">int</span> $number)</span>: <span class="hljs-title">string</span>
     </span>{
-        $parts = <span class="hljs-highlight  prop">array_slice</span>(<span class="hljs-highlight  green"><span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">data</span>()</span>, -$number, $number);
+        $parts = <span class="hljs-highlight  prop">array_slice</span>(<span class="hljs-highlight  yellow"><span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">data</span>()</span>, -$number, $number);
 
         <span class="hljs-keyword">return</span> <span class="hljs-highlight  prop">implode</span>(<span class="hljs-string">"\n        "</span>, $parts);
     }
 
-<span class="hljs-highlight  green full">    <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">data</span><span class="hljs-params">()</span>: <span class="hljs-title">array</span>
+<span class="hljs-highlight  yellow full">    <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">data</span><span class="hljs-params">()</span>: <span class="hljs-title">array</span>
     </span>{
         <span class="hljs-keyword">return</span> [
             <span class="hljs-string">'the horse and the hound and the horn that belonged to'</span>,
@@ -141,12 +141,12 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
 
     <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">phrase</span><span class="hljs-params">(int $number)</span>: <span class="hljs-title">string</span>
     </span>{
-        $parts = <span class="hljs-highlight  green"><span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">parts</span>($number)</span>;
+        $parts = <span class="hljs-highlight  yellow"><span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">parts</span>($number)</span>;
 
         <span class="hljs-keyword">return</span> <span class="hljs-highlight  prop">implode</span>(<span class="hljs-string">"\n        "</span>, $parts);
     }
 
-<span class="hljs-highlight  green full">    <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-highlight  prop"><span class="hljs-title">parts</span></span><span class="hljs-params">(int $number)</span>: <span class="hljs-title">array</span>
+<span class="hljs-highlight  yellow full">    <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-highlight  prop"><span class="hljs-title">parts</span></span><span class="hljs-params">(int $number)</span>: <span class="hljs-title">array</span>
     </span>{
         <span class="hljs-keyword">return</span> <span class="hljs-highlight  prop">array_slice</span>(<span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">data</span>(), -$number, $number);
     }</span>}</code></pre>
@@ -204,12 +204,12 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
     </span>{
         $parts = <span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">parts</span>($number);
 
-        <span class="hljs-keyword">return</span> <span class="hljs-highlight  green"><span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">formatter</span>-&gt;<span class="hljs-highlight  prop">format</span></span>($parts);
+        <span class="hljs-keyword">return</span> <span class="hljs-highlight  yellow"><span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">formatter</span>-&gt;<span class="hljs-highlight  prop">format</span></span>($parts);
     }
 
     <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">data</span><span class="hljs-params">()</span>: <span class="hljs-title">array</span>
     </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-highlight  green"><span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">orderer</span>-&gt;<span class="hljs-highlight  prop">order</span></span>([
+        <span class="hljs-keyword">return</span> <span class="hljs-highlight  yellow"><span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">orderer</span>-&gt;<span class="hljs-highlight  prop">order</span></span>([
             <span class="hljs-string">'the horse and the hound and the horn that belonged to'</span>,
             <span class="hljs-comment">// …</span>
             <span class="hljs-string">'the house that Jack built'</span>,
