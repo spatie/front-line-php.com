@@ -164,6 +164,10 @@
     background-color: rgba(0,0,0,0.025);
 }
 
+.markup-code pre code {
+    background:transparent 
+}
+
 .markup-code pre {
     @apply font-mono;
     @apply my-12;
@@ -179,10 +183,6 @@
     .markup-code pre {
         width: calc(33ch + 50vw + 1.5rem);
     }
-}
-
-.markup-code pre code {
-    background:transparent 
 }
 
 .markup-code pre::-webkit-scrollbar { height: 1px;width: 1px; }
