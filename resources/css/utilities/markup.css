@@ -5,7 +5,7 @@
 }
 
 .markup h2 {
-    @apply mt-8;
+    @apply mt-16;
     @apply mb-4;
 }
 
@@ -15,10 +15,14 @@
     @apply font-semibold;
 }
 
+.markup p {
+    @apply leading-relaxed;
+}
+
 .markup p,
 .markup ol,
 .markup ul {
-    @apply mb-4;
+    @apply mb-8;
 }
 
 .markup blockquote {
@@ -64,6 +68,11 @@
 
 .markup strong {
     @apply font-semibold;
+}
+
+.markup hr {
+    @apply my-32;
+    @apply mr-64;
 }
 
 /* List styles */
@@ -138,34 +147,49 @@
     background-position: 1em 0px;
 }
 
+.markup-links .markup-anchor {
+    background-image: none;
+    @apply text-blue-500;
+    @apply text-opacity-50;
+}
+
+.markup-links .markup-anchor:hover {
+    @apply text-opacity-100;
+}
+
 /* Code styles */
 
+.markup-code code {
+    @apply font-mono;
+    background-color: rgba(0,0,0,0.025);
+}
+
 .markup-code pre {
-    @apply p-6;
-    @apply rounded;
+    @apply font-mono;
+    @apply my-8;
+    @apply px-8;
+    @apply py-6;
     @apply overflow-x-auto;
     @apply bg-white;
-    font-size: 13px;
-    line-height: 1.9;
+    font-size: 0.85em;
+    line-height: 1.8;
+    background-color: rgba(0,0,0,0.025);
 }
 
-.markup-code pre::-webkit-scrollbar,
-.markup-code pre::-webkit-scrollbar-corner {
-    width: 4px;
-    height: 4px;
+.markup-code pre code {
+    background:transparent 
 }
+
+.markup-code pre::-webkit-scrollbar { height: 1px;width: 1px; }
 
 .markup-code pre::-webkit-scrollbar-track {
-    @apply bg-white;
+  background: transparent;
 }
 
 .markup-code pre::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-}
-
-.markup-code pre {
-    @apply my-6;
-    @apply shadow;
+    background-image: none;
+    @apply bg-purple-400;
+    @apply bg-opacity-25;
 }
 
 .markup img {
@@ -232,5 +256,3 @@
     @apply text-right;
     font-variant-numeric: tabular-nums;
 }
-
-

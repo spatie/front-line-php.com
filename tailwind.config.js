@@ -5,7 +5,8 @@ module.exports = {
     theme: {
         fontFamily: {
             sans: ["Inter", ...defaultTheme.fontFamily.sans],
-            display: ["Staatliches", ...defaultTheme.fontFamily.sans]
+            display: ["Staatliches", ...defaultTheme.fontFamily.sans],
+            mono: ["IBM Plex Mono", ...defaultTheme.fontFamily.mono]
         },
         colors: {
             transparent: "transparent",
@@ -25,10 +26,12 @@ module.exports = {
                 500: '#0756b0'
             },
             green: {
-                500: '#75ad20'
+                300: '#abcf73',
+                500: '#75ad20',
+                600: '#639517'
             },
             red: {
-                500: '#9c1c13'
+                500: '#ab190f'
             },
         },
 

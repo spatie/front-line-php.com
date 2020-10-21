@@ -7,6 +7,8 @@
 @import "tailwindcss/utilities";
 
 @import "./utilities/markup.css";
+@import "./vendor/hljs.css";
+
 
 button {
     transition: transform 0.2s ease;
@@ -189,3 +191,4 @@ button:active {
   background: linear-gradient(to bottom, #d8eff3 0%, #4530a8 100%);
   /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8eff3', endColorstr='#bae2e9', GradientType=1); */
 }
+
