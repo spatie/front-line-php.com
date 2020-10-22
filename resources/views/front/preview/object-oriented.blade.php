@@ -18,7 +18,7 @@
     <h2 id="the-pitfall-of-inheritance"><a href="#the-pitfall-of-inheritance" class="markup-anchor">#</a> The pitfall of inheritance</h2>
     <p>I found it difficult to believe at first, but classes and inheritance have nothing to do with OOP the way Alan envisioned it. That doesn't mean they are bad things per se, but it <em>is</em> good to think about their purpose and how we can use, as well as abuse them.
         Alan's vision only described objects — it didn't describe how those objects were created. Classes were added later as a convenient way to manage objects, but they are only an implementation detail, not the core idea of OOP. With classes came inheritance, another a useful tool when used correctly. That hasn't been the case though: the problem Alan tried to address 20 years ago still exists today.</p>
-    <p>One of the acclaimed strengths of OOP is that is models our code in ways humans think about the world. In reality though, we rarely think in terms of abstractions and inheritance. Instead of using inheritance in places where it actually makes sense, we've been abusing it as a way to share code, and to configure objects in an obscure way.
+    <p>One of the acclaimed strengths of OOP is that it models our code in ways humans think about the world. In reality though, we rarely think in terms of abstractions and inheritance. Instead of using inheritance in places where it actually makes sense, we've been abusing it as a way to share code, and to configure objects in an obscure way.
         I'm going to show you a great example that illustrates this problem, though I want to say up front that it isn't my own: it's Sandi Metz's, a great teacher on the subject of OOP. Let's take a look.</p>
     <p>There's a children's nursery rhyme called “The House That Jack Built” (it's also a horror movie but that's unrelated).
         It starts like this:</p>
@@ -40,7 +40,7 @@
         the cow with the crumpled horn that tossed
         the dog that worried
         the cat that killed
-        the rat that ate 
+        the rat that ate
         the malt that lay in
         the house that Jack built.</code></pre>
     <p>Let's code this in PHP: a program that you can ask a given iteration, and it will produce the poem up until that point. Let's do it in an OO way. We start by adding all parts into a data array within a class; let's call that class <code><span class="hljs-highlight  type">PoemGenerator</span></code> — sounds very OO, right? Good.</p>
@@ -91,7 +91,7 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
     <hr>
     <p>Then comes along… a new feature request. Let's build a <em>random</em> poem generator: it will randomise the order of the phrases. How do we solve this in a clean way without copying and duplicating code? Inheritance to the rescue — right?
         First let's do a little refactor, let's add a protected <code><span class="hljs-highlight  prop">data</span></code> method, so that we have a little more flexibility in what it actually returns:</p>
-    <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PoemGenerator</span> 
+    <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PoemGenerator</span>
 </span>{
     <span class="hljs-keyword">protected</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">phrase</span><span class="hljs-params">(<span class="hljs-highlight  type">int</span> $number)</span>: <span class="hljs-title">string</span>
     </span>{
@@ -135,7 +135,7 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
         the house that Jack built the house that Jack built.</code></pre>
     <p>We can solve this; inheritance — right?</p>
     <p>Let's again do a small refactor in <code><span class="hljs-highlight  type">PoemGenerator</span></code>, just to make sure our code stays clean! Let's extract the array slicing functionality in <code><span class="hljs-highlight  prop">phrase</span></code> to its own method, because that's a better separation of concerns — which we learned is a good thing!</p>
-    <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PoemGenerator</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">PoemGenerator</span>
+    <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PoemGenerator</span>
 </span>{
     <span class="hljs-comment">// …</span>
 
@@ -192,7 +192,7 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
         <span class="hljs-highlight  keyword">public</span> <span class="hljs-highlight  type">Formatter</span> $formatter,
         <span class="hljs-highlight  keyword">public</span> <span class="hljs-highlight  type">Orderer</span> $orderer,
     )</span> </span>{}
-    
+
     <span class="hljs-comment">// …</span>
 }</code></pre>
     <p>With both available, let's change the implementation details of <code><span class="hljs-highlight  prop">phrase</span></code> and <code><span class="hljs-highlight  prop">data</span></code>:</p>
@@ -259,7 +259,7 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
     <p>The default implementations, <code><span class="hljs-highlight  type">DefaultFormatter</span></code> and <code><span class="hljs-highlight  type">SequentialOrderer</span></code> might not do any complex operations, though still they are a valid business concern: a "sequential order" and "default format" are two valid cases needed to create the poem as we know it in its normal form.</p>
     <p>Do you realise what just happened? You might be thinking that we're writing more code, but you're forgetting something… we can remove our <code><span class="hljs-highlight  type">RandomPoemGenerator</span></code> and <code><span class="hljs-highlight  type">EchoPoemGenerator</span></code> altogether, we don't need them anymore, we can solve all of our cases, with only the <code><span class="hljs-highlight  type">PoemGenerator</span></code>:</p>
     <pre><code class="language-php hljs php">$generator = <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">PoemGenerator</span>(
-    <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">EchoFormatter</span>(), 
+    <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">EchoFormatter</span>(),
     <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">RandomOrderer</span>(),
 );</code></pre>
     <p>We can make our lives a little more easy still, by providing proper defaults:</p>
@@ -275,16 +275,16 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
 }</code></pre>
     <p>And using named properties, we can construct a <code><span class="hljs-highlight  type">PoemGenerator</span></code> whatever way we want:</p>
     <pre><code class="language-php hljs php">$generator = <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">PoemGenerator</span>(
-    <span class="hljs-highlight  prop">formatter</span>: <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">EchoFormatter</span>(), 
+    <span class="hljs-highlight  prop">formatter</span>: <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">EchoFormatter</span>(),
 );
 
 $generator = <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">PoemGenerator</span>(
-    <span class="hljs-highlight  prop">orderer</span>: <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">RandomOrderer</span>(), 
+    <span class="hljs-highlight  prop">orderer</span>: <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">RandomOrderer</span>(),
 );
 
 $generator = <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">PoemGenerator</span>(
-    <span class="hljs-highlight  prop">formatter</span>: <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">EchoFormatter</span>(), 
-    <span class="hljs-highlight  prop">orderer</span>: <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">RandomOrderer</span>(), 
+    <span class="hljs-highlight  prop">formatter</span>: <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">EchoFormatter</span>(),
+    <span class="hljs-highlight  prop">orderer</span>: <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">RandomOrderer</span>(),
 );</code></pre>
     <p>No more need for a third abstraction!</p>
     <hr>
