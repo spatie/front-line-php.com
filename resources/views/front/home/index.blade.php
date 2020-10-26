@@ -104,6 +104,7 @@
                     <li>Object oriented PHP</li>
                     <li>MVC Frameworks</li>
                     <li>Dependency Injection</li>
+                    <li>Collections</li>
                     <li>Testing</li>
                     <li>Style guide</li>
                 </ol>
@@ -123,7 +124,6 @@
                     <li>Type variance</li>
                     <li>Async PHP</li>
                     <li>Event driven development</li>
-                    <li>Functional programming</li>
                     <li>Cheat Sheet</li>
                 </ol>
             </div>
