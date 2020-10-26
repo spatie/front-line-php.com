@@ -239,7 +239,7 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
 </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">format</span><span class="hljs-params">(<span class="hljs-highlight  type">array</span> $lines)</span>: <span class="hljs-title">string</span>
     </span>{
-        <span class="hljs-highlight  prop">implode</span>(<span class="hljs-string">"\n        "</span>, $lines);
+        <span class="hljs-keyword">return</span> <span class="hljs-highlight  prop">implode</span>(<span class="hljs-string">"\n        "</span>, $lines);
     }
 }
 
