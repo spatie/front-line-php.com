@@ -292,7 +292,7 @@ $generator = <span class="hljs-keyword">new</span> <span class="hljs-highlight  
     <p>I'll admit: I don't <em>always</em> use this approach when I start writing code. It's often easier to start simple during the development process and not think about abstracts or composition. I'd even say it's a great rule to follow: don't abstract too soon. The important lesson isn't that you should always use composition, rather it's about being able to identify the problem when you encounter it, and using the right solution to solve it.</p>
     <h2 id="what-about-traits?"><a href="#what-about-traits?" class="markup-anchor">#</a> What about traits?</h2>
     <p>You might be thinking about traits to solve our poem problem. You could make a <code><span class="hljs-highlight  type">RandomPoemTrait</span></code> and <code><span class="hljs-highlight  type">EchoPoemTrait</span></code>, implementing <code><span class="hljs-highlight  prop">data</span></code> and <code><span class="hljs-highlight  prop">phrase</span></code>.
-        Well… That question will be answered in-depth in <a href="https://front-line-php.com/">the book</a>, make sure to leave your email address to know when it's available!</p>
+        Well, using traits wouldn't be a better solution than composition. Why? That question will be answered in-depth in <a href="https://front-line-php.com/">the book</a>, make sure to leave your email address to know when it's available!</p>
 
 </div>
 
