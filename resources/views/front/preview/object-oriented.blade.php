@@ -266,11 +266,11 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
     <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PoemGenerator</span>
 </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(
-        <span class="hljs-highlight  keyword">public</span> <span class="hljs-highlight  type">Formatter</span> $formatter,
-        <span class="hljs-highlight  keyword">public</span> <span class="hljs-highlight  type">Orderer</span> $orderer,
+        <span class="hljs-highlight  keyword">public</span> <span class="hljs-highlight  type">?Formatter</span> $formatter = null,
+        <span class="hljs-highlight  keyword">public</span> <span class="hljs-highlight  type">?Orderer</span> $orderer = null,
     )</span> </span>{
-        <span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">formatter</span> = $formatter ?? <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">DefaultFormatter</span>();
-        <span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">orderer</span> = $orderer ?? <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">Sequential</span>();
+        <span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">formatter</span> ??= <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">DefaultFormatter</span>();
+        <span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">orderer</span> ??= <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">Sequential</span>();
     }
 }</code></pre>
     <p>And using named properties, we can construct a <code><span class="hljs-highlight  type">PoemGenerator</span></code> whatever way we want:</p>
