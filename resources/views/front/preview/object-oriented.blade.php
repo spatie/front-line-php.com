@@ -270,7 +270,7 @@ $generator-&gt;<span class="hljs-highlight  prop">generate</span>(<span class="h
         <span class="hljs-highlight  keyword">public</span> <span class="hljs-highlight  type">?Orderer</span> $orderer = null,
     )</span> </span>{
         <span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">formatter</span> ??= <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">DefaultFormatter</span>();
-        <span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">orderer</span> ??= <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">Sequential</span>();
+        <span class="hljs-keyword">$this</span>-&gt;<span class="hljs-highlight  prop">orderer</span> ??= <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">SequentialOrderer</span>();
     }
 }</code></pre>
     <p>And using named properties, we can construct a <code><span class="hljs-highlight  type">PoemGenerator</span></code> whatever way we want:</p>
