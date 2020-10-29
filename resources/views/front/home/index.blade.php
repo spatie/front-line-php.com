@@ -141,15 +141,15 @@
                 </h3>
 
                 <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li><a href="https://spatie.be/videos/front-line-php/the-match-expression">The Match expression</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/the-match-expression">The match expression</a></li>
                     <li><a href="https://spatie.be/videos/front-line-php/adding-meta-data-using-attributes">Adding meta data using attributes</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/promoted-properties">Promoted Properties</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/promoted-properties">Promoted properties</a></li>
                     <li><a href="https://spatie.be/videos/front-line-php/named-arguments">Named arguments</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/union-types">Union Types</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/union-types">Union types</a></li>
                     <li><a href="https://spatie.be/videos/front-line-php/the-nullsafe-operator">The nullsafe operator</a></li>
                     <li><a href="https://spatie.be/videos/front-line-php/improved-exceptions">Improved exceptions</a></li>
                     <li><a href="https://spatie.be/videos/front-line-php/object-classnames">Object classnames</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/the-stringable-interface">The Stringable interface</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/the-stringable-interface">The stringable interface</a></li>
                     <li><a href="https://spatie.be/videos/front-line-php/three-new-string-functions">Three new string functions</a></li>
                 </ol>
             </div>
