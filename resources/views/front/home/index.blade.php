@@ -32,11 +32,11 @@
         <div class="-mt-16">
             <a class="block" href="{{ route('object-oriented') }}">
                 <img alt="Front Line PHP" srcset="/images/cover-1200.jpg 1200w, /images/cover-600.jpg 600w" sizes="500px, (min-width:768px) 45vw" src="/images/cover-1200.jpg" class="mx-auto w-full max-w-xl shadow-2xl">
-                {{--<div class="absolute top-0 w-full flex justify-center -mt-6">
+                <div class="absolute top-0 w-full flex justify-center -mt-6">
                     <x-button icon="fas fa-play">
                         Read sample
                     </x-button>
-                </div>--}}
+                </div>
             </a>
         </div>
 
