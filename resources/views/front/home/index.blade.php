@@ -81,16 +81,16 @@
                 </h3>
 
                 <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li>PHP today</li>
-                    <li>New versions</li>
-                    <li>PHP's type system</li>
-                    <li>Static analysis</li>
-                    <li>Property promotion</li>
-                    <li>Named arguments</li>
-                    <li>Attributes</li>
-                    <li>Short closures</li>
-                    <li>Working with arrays</li>
-                    <li>Match</li>
+                    <li><a href="">PHP today</a></li>
+                    <li><a href="">New versions</a></li>
+                    <li><a href="">PHP's type system</a></li>
+                    <li><a href="">Static analysis</a></li>
+                    <li><a href="">Property promotion</a></li>
+                    <li><a href="">Named arguments</a></li>
+                    <li><a href="">Attributes</a></li>
+                    <li><a href="">Short closures</a></li>
+                    <li><a href="">Working with arrays</a></li>
+                    <li><a href="">Match</a></li>
                 </ol>
             </div>
 
@@ -127,6 +127,44 @@
                     <li>Cheat Sheet</li>
                 </ol>
             </div>
+            
+        </div>
+    </section>
+
+    <section class="mb-24" id="videos">
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-none">Free videos</h2>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-8 markup-links">
+            <div>
+                <h3 class="font-semibold text-xl">
+                    <div class="text-3xl font-display leading-none">New features in PHP 8</div>
+                </h3>
+
+                <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
+                    <li><a href="https://spatie.be/videos/front-line-php/the-match-expression">The Match expression</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/adding-meta-data-using-attributes">Adding meta data using attributes</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/promoted-properties">Promoted Properties</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/named-arguments">Named arguments</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/union-types">Union Types</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/the-nullsafe-operator">The nullsafe operator</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/improved-exceptions">Improved exceptions</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/object-classnames">Object classnames</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/the-stringable-interface">The Stringable interface</a></li>
+                    <li><a href="https://spatie.be/videos/front-line-php/three-new-string-functions">Three new string functions</a></li>
+                </ol>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-xl">
+                    <div class="text-3xl font-display leading-none">Getting started with PHP 8</div>
+                </h3>
+
+                <ol start=11 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
+                    <li><a href="https://spatie.be/videos/front-line-php/automatically-upgrading-your-code-to-php-8-using-rector">Automatically upgrading your code to PHP 8 using Rector</a></li>
+                </ol>
+                <div class="mt-8">And <strong>more to come</strong>…</div>
+            </div>
+            
         </div>
     </section>
 
