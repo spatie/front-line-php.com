@@ -1,8 +1,8 @@
 @extends('front.layouts.article')
 
-@section('title', 'Object Oriented done right')
+@section('title', 'Object Oriented Done Right')
 
-@section('description', 'Object Oriented done right — Building modern applications with PHP 8')
+@section('description', 'Object Oriented Done Right — Building modern applications with PHP 8')
 
 @section('cta_description')
 You've just read part of our upcoming book called <a href="https://front-line-php.com">Front Line PHP</a>, it'll arrive by the end of this year and be the best way to learn modern day PHP and PHP 8.
