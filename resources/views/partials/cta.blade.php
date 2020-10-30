@@ -12,9 +12,7 @@
         Walk up front
     </h2>
     <div class="block text-xl font-semibold leading-relaxed text-white text-opacity-90">
-        Get previews and early access to the ebook and videos.
-        <br>
-        Launching early December 2020.
+        @yield('cta_description')
     </div>
 
     @include('partials.newsletter')

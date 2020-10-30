@@ -168,7 +168,7 @@
         </div>
     </section>
 
-    @include('partials.cta')
+    @include('partials.cta-home')
 </main>
 
 @include('partials.footer')

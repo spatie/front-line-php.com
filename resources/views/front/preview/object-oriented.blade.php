@@ -1,8 +1,14 @@
 @extends('front.layouts.article')
 
-@section('title', 'Object Oriented PHP')
+@section('title', 'Object Oriented done right')
 
-@section('description', 'Object Oriented PHP — Building modern applications with PHP 8')
+@section('description', 'Object Oriented done right — Building modern applications with PHP 8')
+
+@section('cta_description')
+You've just read part of our upcoming book called <a href="https://front-line-php.com">Front Line PHP</a>, it'll arrive by the end of this year and be the best way to learn modern day PHP and PHP 8.
+<br><br>
+Interested? You can leave your email address here, and we'll notify you when it's done.
+@endsection
 
 @section('article')
 
@@ -14,7 +20,7 @@
     <p>Alan used this metaphor to explain a critical problem he saw with “modern OOP” 20 years ago. I think it still holds today: we've taken the solution to a problem — OO code — we've scaled it by a factor of 100, and expected it to work the same way. Today still, we don't think enough about architecture — which is rather crucial if you're building a cathedral — we use the OO solutions we learned without any extra thought. Most of us learned OO in isolation with small examples, and rarely at scale. In most real life projects, you cannot simply apply the patterns you've learned and expect everything to fall into place the same way it did with Animals, Cats, and Dogs.</p>
     <p>This reckless scaling of OO code is what cause many people to voice their disapproval of it in recent years. Personally I believe OOP is as good a tool as any other — functional programming being the modern-day popular contestant — <em>if</em> used correctly.</p>
     <p>My takeaway from Alan's vision is that each object is a little program on its own, with its own internal state. Objects send messages between each other — packages of immutable data — which other objects can interpret and react to. You can't write all code this way, and that's fine — it's fine to not blindly follow these rules.
-        Still, I have experienced the positive impact of this mindset first hand. Thinking of objects as little standalone programs, I started writing parts of my code in a different style. I hope that, now that we're going to look at object oriented PHP, you'll keep Alan's ideas in mind. Don't blindly apply patterns and principles. Try to look at what you're building as a whole.</p>
+        Still, I have experienced the positive impact of this mindset first hand. Thinking of objects as little standalone programs, I started writing parts of my code in a different style. I hope that, now that we're going to look at OOP, you'll keep Alan's ideas in mind. Don't blindly apply patterns and principles. Try to look at what you're building as a whole.</p>
     <h2 id="the-pitfall-of-inheritance"><a href="#the-pitfall-of-inheritance" class="markup-anchor">#</a> The pitfall of inheritance</h2>
     <p>I found it difficult to believe at first, but classes and inheritance have nothing to do with OOP the way Alan envisioned it. That doesn't mean they are bad things per se, but it <em>is</em> good to think about their purpose and how we can use, as well as abuse them.
         Alan's vision only described objects — it didn't describe how those objects were created. Classes were added later as a convenient way to manage objects, but they are only an implementation detail, not the core idea of OOP. With classes came inheritance, another a useful tool when used correctly. That hasn't been the case though: the problem Alan tried to address 20 years ago still exists today.</p>
@@ -43,7 +49,7 @@
         the rat that ate
         the malt that lay in
         the house that Jack built.</code></pre>
-    <p>Let's code this in PHP: a program that you can ask a given iteration, and it will produce the poem up until that point. Let's do it in an OO way. We start by adding all parts into a data array within a class; let's call that class <code><span class="hljs-highlight  type">PoemGenerator</span></code> — sounds very OO, right? Good.</p>
+    <p>Let's code this together, I'll be using PHP. We're going to make a program that you can ask a given iteration, and it will produce the poem up until that point. Let's do it in an OO way. We start by adding all parts into a data array within a class; let's call that class <code><span class="hljs-highlight  type">PoemGenerator</span></code> — sounds very OO, right? Good.</p>
     <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PoemGenerator</span>
 </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">array</span> <span class="hljs-highlight  prop">$data</span> = [
