@@ -8,12 +8,5 @@
         <div style="left: 83%" class="line-6 | absolute top-0 w-1 h-full"></div>
     </div>
 
-    <h2 class="text-6xl font-display mb-8 leading-none text-white text-opacity-90">
-        Walk up front
-    </h2>
-    <div class="block text-xl font-semibold leading-relaxed text-white text-opacity-90">
-        @yield('cta_description')
-    </div>
-
-    @include('partials.newsletter')
+    @yield('cta_body')
 </section>

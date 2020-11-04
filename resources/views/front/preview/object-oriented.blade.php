@@ -4,10 +4,8 @@
 
 @section('description', 'Object Oriented Done Right — Building modern applications with PHP 8')
 
-@section('cta_description')
-You've just read part of our upcoming book called <a href="https://front-line-php.com">Front Line PHP</a>, it'll arrive by the end of this year and be the best way to learn modern day PHP and PHP 8.
-<br><br>
-Interested? You can leave your email address here, and we'll notify you when it's done.
+@section('footer_cta')
+    @include('partials.cta-newsletter')
 @endsection
 
 @section('article')
