@@ -1,8 +1,8 @@
 @extends('front.layouts.article')
 
-@section('title', 'Object Oriented Done Right')
+@section('title', 'Dealing with null')
 
-@section('description', 'Object Oriented Done Right — Building modern applications with PHP 8')
+@section('description', 'Dealing with null — Building modern applications with PHP 8')
 
 @section('footer_cta')
     @include('partials.cta-newsletter')
