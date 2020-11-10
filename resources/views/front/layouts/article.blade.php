@@ -22,7 +22,7 @@
         @yield('header_cta')
     </div>
 
-    <main class="mx-auto max-w-article px-4 sm:px-16" style="background-image: linear-gradient(to bottom, #daf1f5, #fff 200vh )">
+    <main class="mx-auto max-w-article px-4 sm:px-16" style="background-image: linear-gradient(to bottom, #daf1f566, #fff 50vh )">
         <article class="py-16 markup markup-links markup-lists markup-code markup-tables">
             @yield('article')
         </article>
