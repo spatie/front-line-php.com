@@ -71,9 +71,9 @@
     </section>
 
     <section class="mb-24" id="toc">
-        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-none">Table of contents</h2>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-none ">Table of contents</h2>
 
-        <div class="mt-8 grid md:grid-cols-3 gap-8">
+        <div class="mt-8 grid md:grid-cols-3 gap-8 markup-links">
             <div>
                 <h3 class="font-semibold text-xl">
                     <div class="text-3xl font-display leading-none">Part I</div>
@@ -81,16 +81,16 @@
                 </h3>
 
                 <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li><a href="">PHP today</a></li>
-                    <li><a href="">New versions</a></li>
-                    <li><a href="">PHP's type system</a></li>
-                    <li><a href="">Static analysis</a></li>
-                    <li><a href="">Property promotion</a></li>
-                    <li><a href="">Named arguments</a></li>
-                    <li><a href="">Attributes</a></li>
-                    <li><a href="">Short closures</a></li>
-                    <li><a href="">Working with arrays</a></li>
-                    <li><a href="">Match</a></li>
+                    <li>PHP today</li>
+                    <li>New versions</li>
+                    <li>PHP's type system</li>
+                    <li>Static analysis</li>
+                    <li>Property promotion</li>
+                    <li>Named arguments</li>
+                    <li>Attributes</li>
+                    <li>Short closures</li>
+                    <li>Working with arrays</li>
+                    <li>Match</li>
                 </ol>
             </div>
 
@@ -101,7 +101,7 @@
                 </h3>
 
                 <ol start=11 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li>Object oriented PHP</li>
+                    <li><a href="{{ route('object-oriented') }}">Object oriented PHP</a></li>
                     <li>MVC Frameworks</li>
                     <li>Dependency Injection</li>
                     <li>Collections</li>
