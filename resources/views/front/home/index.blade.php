@@ -13,8 +13,8 @@
     </div>
 
     <div class="mx-auto max-w-5xl px-4 sm:px-16 py-16">
-        <div class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 inline-flex items-center bg-yellow-500 px-8 h-10 font-bold whitespace-no-wrap text-xl">
-            Coming early December 2020
+        <div class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
+            Launching November 19<sup>th</sup> 2020
         </div>
         <h1 class="font-display text-5xl sm:text-6xl md:text-7xl leading-none">
             Front Line PHP
