@@ -7,7 +7,7 @@ During the PHP 7.x releases and with PHP 8, several new built-in types were adde
 - <code type>object</code>: anything that is an object
 - <code type>mixed</code>: anything
 @endmarkdown
-    <div class="grid grid-cols-2 gap-8">
+    <div class="grid grid-cols-2 gap-6">
         <x-card id="typed-properties" title="Typed properties" level="2">
             Add types to your class properties:
 

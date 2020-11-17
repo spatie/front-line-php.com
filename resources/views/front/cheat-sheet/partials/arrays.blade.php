@@ -1,6 +1,6 @@
 <x-card id="arrays" title="Arrays" class="col-span-2">
 
-    <div class="grid grid-cols-2 gap-8">
+    <div class="grid grid-cols-2 gap-6">
         <x-card id="destructuring" title="Destructuring" level="2">
             You can destructure arrays to pull out several elements into separate variables:
 
