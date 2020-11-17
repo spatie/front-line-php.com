@@ -1,5 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
     important: true,
     theme: {
@@ -23,7 +25,8 @@ module.exports = {
             },
             blue: {
                 200: '#daf1f5',
-                500: '#0756b0'
+                300: '#c1e2e8',
+                500: '#0756b0',  
             },
             green: {
                 300: '#abcf73',
@@ -56,6 +59,19 @@ module.exports = {
         }
     },
     variants: {
-        opacity: ["responsive", "hover", "focus", "group-hover"]
-    }
+        opacity: ["responsive", "hover", "focus", "group-hover"],
+        backgroundColor: ({ after }) => after(['target']),
+        boxShadow: ({ after }) => after(['target']),
+        textColor: ({ after }) => after(['target']),
+        backgroundOpacity: ({ after }) => after(['target'])
+    },
+    plugins: [
+        plugin(function({ addVariant, e }) {
+          addVariant('target', ({ modifySelectors, separator }) => {
+            modifySelectors(({ className }) => {
+              return `.${e(`target${separator}${className}`)}:target`
+            })
+          })
+        })
+      ]
 };
