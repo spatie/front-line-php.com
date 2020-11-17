@@ -75,7 +75,7 @@
         <div class="mb-8 bg-white" >
             <h3 class="px-6 md:px-12 lg:px-24 pt-12 lg:pt-24 text-base">
                 <div class="text-3xl font-display leading-none" :class="">Foreword</div>
-                By <span class="marker">Roman Pronskiy</span> from <strong>PhpStorm</strong>
+                By <span class="marker">Roman Pronskiy</span> from <strong>JetBrains</strong>
             </h3>
 
             <div class="markup" x-data="{ open: false }">
