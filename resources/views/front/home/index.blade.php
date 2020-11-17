@@ -70,6 +70,45 @@
         </div>
     </section>
 
+    <section class="mb-24">
+
+        <div class="mb-8 bg-white" >
+            <h3 class="px-6 md:px-12 lg:px-24 pt-12 lg:pt-24 text-base">
+                <div class="text-3xl font-display leading-none" :class="">Foreword</div>
+                By <span class="marker">Roman Pronskiy</span> from <strong>PhpStorm</strong>
+            </h3>
+
+            <div class="markup" x-data="{ open: false }">
+                <div class="px-6 md:px-12 lg:px-24 py-12 text-lg" :class="{ 'h-64 overflow-hidden': !open}">
+                    <p>PHP has changed the world. More than 5 million developers are now using this language worldwide to create a variety of applications. But the world is changing PHP as well. Rasmus Lerdorf, the creator of the language, once noted that <q class="italic">a good solution should steal/borrow existing technology</q>. And this is true. PHP takes the best ideas from other ecosystems and improves on them.</p>
+                    <p>It's been 5 years since the release of PHP 7.0. In this time, as the community has matured and needed new features, the language team has been listening to the community and implementing the features. This is what has led PHP to introduce stricter typing, more concise syntax, static analyzers, etc.</p>
+                    <p><q class="italic">It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change.</q> - Leon C. Megginson’s interpretation of Darwin’s ideas is an insight that guides PHP year after year.</p>
+                    <p>I was still in school when I first saw PHP, and at the time I had no idea that I would go on to work with it professionally. Back then, in 2004, the main problem the internet had was searching for information. Today, because so much information is readily available, the problem is not searching information but filtering and identifying what is useful. It is, to lean on an old cliché, like looking for a $needle in a $haystack – or was it the other way around? Anyway, how do we dig up the really valuable things in these endless feeds mixed with ads and notifications?</p>
+                    <p>It's impossible to give a comprehensive answer for all areas, but for PHP the answer is here – Front Line PHP.</p>
+                    <p>This book gives a core of knowledge about everything that concerns the PHP’s development today and in the near future. This is not a paraphrase of documentation, but rather a thoughtful and meaningful development experience in short and clear formulations. It offers a fresh look at the newest features of the language, as well as at some that are already familiar.</p>
+                    <p>Writing quality code in PHP has simultaneously become both easier and more complicated. On the one hand, there are many new features and tools at a developer's disposal. On the other hand, you need to juggle them elegantly in order to solve real problems beautifully and easily.</p>
+                    <p>That’s what this book is really about. Complex things in simple words. How to apply them. Principles and practices. It is a fishing rod, in a sea full of fish.</p>
+                    <p  class="font-semibold">
+                    There has never been a better time to work with PHP.
+                    And this book is one of the best ways to learn it.</p>
+                    <p>I hope you enjoy it!<br>
+
+                    <span class="marker">Roman Pronskiy</span></p>
+                </div>
+                
+                <div x-show="!open" style="background-image: linear-gradient(to top, #ffffffff, #ffffff00)" class="absolute bottom-0 left-0 w-full h-32">
+                </div>
+
+                <div class="absolute -mb-4 bottom-0 left-0 w-full flex justify-center">
+                    <button x-show="!open" class="button" @click="open = true">
+                        read more
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section class="mb-24" id="toc">
         <h2 class="font-display text-3xl sm:text-4xl md:text-5xl leading-none ">Table of contents</h2>
 
@@ -127,7 +166,7 @@
                     <li>Cheat Sheet</li>
                 </ol>
             </div>
-            
+
         </div>
     </section>
 
@@ -164,7 +203,7 @@
                 </ol>
                 <div class="mt-8">And <strong>more to come</strong>…</div>
             </div>
-            
+
         </div>
     </section>
 
