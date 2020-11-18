@@ -1,6 +1,6 @@
-<x-card id="types" title="Types" class="col-span-2">
+<x-card id="types" title="Types" class="lg:col-span-2">
 
-    <div class="grid grid-cols-2 gap-6">
+    <div class="grid lg:grid-cols-2 gap-6">
         <x-card id="built-in-types" title="Built-in Types" level="2">
             <p>During the PHP 7.x releases and with PHP 8, several new built-in types were added:</p>
 

@@ -1,5 +1,5 @@
-<x-card id="dealing-with-null" title="Dealing with null" class="col-span-2">
-    <div class="grid grid-cols-2 items-start gap-6">
+<x-card id="dealing-with-null" title="Dealing with null" class="lg:col-span-2">
+    <div class="grid lg:grid-cols-2 items-start gap-6">
         <x-card id="null-coalescing-operator" title="Null Coalescing" level="2">
             <p>Use the null coalescing operator to provide a fallback when a property is <code>null</code>:</p>
 

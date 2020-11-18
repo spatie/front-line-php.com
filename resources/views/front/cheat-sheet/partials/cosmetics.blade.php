@@ -1,5 +1,5 @@
-<x-card id="cosmetics" title="Cosmetics" class="col-span-2">
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+<x-card id="cosmetics" title="Cosmetics" class="lg:col-span-2">
+    <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
         <x-card id="class-names" title="Class Names" level="2">
             <p>As of PHP 8, you can use <code><span class="hljs-keyword">::class</span></code> on objects as well:</p>
 
