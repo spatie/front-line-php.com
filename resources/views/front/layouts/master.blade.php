@@ -35,7 +35,8 @@
         <meta property="og:description"
             content="@yield('description')"/>
         <meta property="og:image" content="https://front-line-php.com/images/social-card.jpg"/>
-
+        <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+        
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
 
 

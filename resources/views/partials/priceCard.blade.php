@@ -1,36 +1,52 @@
 @php
-    $expiresAt = \Carbon\Carbon::createFromFormat('Y-m-d H', '2020-09-11 18', 'Europe/Brussels')
+    $coupon = \App\Support\Coupon::forCouponName('default')
 @endphp
 
 <section class="flex justify-center">
     <div class="w-full">
         <div class="z-10 flex-grow shadow-2xl border border-black">
-            <div class="bg-yellow-500 h-6"></div>
+            <div style="background-image: linear-gradient(to right, #0756b0 0%, #4530a8 80%)" class="h-6"></div>
             <div class="bg-white">
                 <div class="text-center pt-4 pb-12 leading-none">
                     <div class="font-display font-semibold text-3xl">
-                        @if($expiresAt->isFuture())
-                        <div class="flex flex-col items-center mb-2 text-center text-green-500 uppercase text-xs tracking-widest leading-snug">
-                            <div>Launch promo ending in</div>
-                            <div class="z-10 transform rotate-0 bg-green-400 font-normal text-white px-1 py-1 shadow-md" style="--transform-rotate: -1.5deg !important">
-                                <x-countdown :expires="$expiresAt">
-                                    <span class="bg-green-500 px-1"><span x-text="timer.days">{{ $component->days() }}</span> days</span>
-                                    <span class="bg-green-500 px-1"><span x-text="timer.hours">{{ $component->hours() }}</span> hours</span>
-                                    <span class="bg-green-500 px-1"><span x-text="timer.minutes">{{ $component->minutes() }}</span> minutes</span>
-                                </x-countdown>
+                        @if($coupon->active())
+                            <div
+                                class="flex flex-col items-center mb-6 text-center text-gray-700 uppercase text-xs tracking-widest leading-snug">
+                                <div>{{ $coupon->label() }} ending in</div>
+                                <div
+                                    class="z-10 transform rotate-0 bg-purple-500 bg-opacity-75 font-sans font-normal text-white px-1 py-1 shadow-md"
+                                    style="--transform-rotate: -1.5deg !important; font-variant-numeric: tabular-nums;background-image: linear-gradient(to right, #0756b0 0%, #4530a8 80%)">
+                                    <x-countdown :expires="$coupon->expiresAt()">
+                                        <span class="font-semibold bg-purple-500 bg-opacity-50 px-1"><span
+                                                x-text="timer.days">{{ $component->days() }}</span> <span class="font-display">days</span></span>
+                                        <span class="font-semibold bg-purple-500 bg-opacity-50 px-1"><span
+                                                x-text="timer.hours">{{ $component->hours() }}</span> <span class="font-display">hours</span></span>
+                                        <span class="font-semibold bg-purple-500 bg-opacity-50 px-1"><span
+                                                x-text="timer.minutes">{{ $component->minutes() }}</span> <span class="font-display">minutes</span></span>
+                                        <span class="font-semibold bg-purple-500 bg-opacity-50 px-1"><span
+                                                x-text="timer.seconds">{{ $component->seconds() }}</span> <span class="font-display">seconds</span></span>
+                                    </x-countdown>
+                                </div>
                             </div>
-                        </div>
                         @endif
-                        Videos & ebook
+                        Ebook
                     </div>
                     <div class="flex justify-center mt-3">
-                        <div class="font-display">
-                            <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span class="font-bold text-5xl" data-id="current-price">—</span>
-                            <span class="hidden absolute right-full mr-4 top-0 mt-2">
-                                <sup class="text-gray-500 text-xs" data-id="original-currency"></sup><span class="text-gray-500 line-through" data-id="original-price">—</span>
+                        <div>
+                            <sup class="text-gray-500 text-3xl" data-id="current-currency-{{ config('services.paddle.product_id') }}"></sup><span
+                                class="font-bold text-5xl" data-id="current-price-{{ config('services.paddle.product_id') }}">—</span>
+                            <span data-id="original-display-{{ config('services.paddle.product_id') }}" class="hidden absolute right-full mr-4 top-0 mt-2">
+                                <sup class="text-gray-500 text-xs" data-id="original-currency-{{ config('services.paddle.product_id') }}"></sup><span
+                                    class="text-gray-500 line-through" data-id="original-price-{{ config('services.paddle.product_id') }}">—</span>
                             </span>
                         </div>
                     </div>
+
+                     @if ($coupon->active())
+                        <div class="mt-4 text-gray-500 text-xs">
+                            {{ $coupon->percentage() }}% off with coupon <code class="px-2 py-1 text-gray-700 bg-gray-200 bg-opacity-25">{{ $coupon->code() }}</code>
+                        </div>
+                    @endif
                 </div>
                 <div class="text-center z-10 -mb-3">
                     <a href="https://spatie.be/products/laravel-beyond-crud">
@@ -42,10 +58,10 @@
                 <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-100">
                     <div>
                         <ul class="pb-6 leading-relaxed">
-                            <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
-                            <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 2 hours of video</li>
-                            <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
-                            <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
+                            <li class="font-semibold"><i class="fas fa-check text-xs text-blue-500"></i> 250 pages of premium content</li>
+                            <li class="font-semibold"><i class="fas fa-check text-xs text-blue-500"></i> 2 hours of free videos</li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i> Example source code download</li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i> All beautifully designed</li>
                         </ul>
 
                         <p class="text-xs text-gray-600">
@@ -69,22 +85,32 @@
         return string.indexOf(firstDigit);
     }
 
-    Paddle.Product.Prices(626491, function(prices) {
-        let priceString = prices.price.net;
+    function displayPaddleProductPrice(productId) {
+        Paddle.Product.Prices(productId, function(prices) {
+            let priceString = prices.price.net;
 
-        let indexOFirstDigitInString = indexOfFirstDigitInString(priceString);
+            let factor = {{ $coupon->active() ? (100 - $coupon->percentage())/100 : 1 }};
 
-        let price = priceString.substring(indexOFirstDigitInString);
-        price = price.replace('.00', '').replace(/,/g, '');
+            let indexOFirstDigitInString = indexOfFirstDigitInString(priceString);
 
-        let currencySymbol = priceString.substring(0, indexOFirstDigitInString);
-        currencySymbol = currencySymbol.replace('US', '');
+            let price = priceString.substring(indexOFirstDigitInString);
+            price = price.replace('.00', '').replace(/,/g, '');
 
-        document.querySelector('[data-id="current-currency"]').innerHTML = currencySymbol;
-        document.querySelector('[data-id="current-price"]').innerHTML = price;
+            let currencySymbol = priceString.substring(0, indexOFirstDigitInString);
+            currencySymbol = currencySymbol.replace('US', '');
 
-        document.querySelector('[data-id="original-currency"]').innerHTML = currencySymbol;
-        document.querySelector('[data-id="original-price"]').innerHTML = Math.round(price * 1.3355);
-    });
+            document.querySelector(`[data-id="original-currency-${productId}"]`).innerHTML = currencySymbol;
+            document.querySelector(`[data-id="original-price-${productId}"]`).innerHTML = price;
+
+            document.querySelector(`[data-id="current-currency-${productId}"]`).innerHTML = currencySymbol;
+            document.querySelector(`[data-id="current-price-${productId}"]`).innerHTML = Math.ceil(price * factor);
+            
+            if(factor < 1) {
+                document.querySelector(`[data-id="original-display-${productId}"]`).classList.remove('hidden');
+            }
+        });
+    }
+
+    displayPaddleProductPrice({{ config('services.paddle.product_id') }});
 
 </script>
