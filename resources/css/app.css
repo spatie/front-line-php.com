@@ -100,7 +100,7 @@ button:active {
     @apply -mx-1 ;
     @apply px-1 ;
     @apply block;
-    background-image: linear-gradient(to right,theme('colors.yellow.500')66, theme('colors.yellow.500')00 80%);
+    background-image: linear-gradient(to right,theme('colors.yellow.500'), theme('colors.yellow.500')33 80%);
 }
 
 .marker-purple {
