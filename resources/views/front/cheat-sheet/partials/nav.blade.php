@@ -16,6 +16,7 @@
         </ul>
     </li>
     <li><a class="hover:opacity-75" href="#exceptions">Exceptions</a></li>
+    <li><a class="hover:opacity-75" href="#match-expression">Match Expression</a></li>
     <li>
         <a class="hover:opacity-75" href="#dealing-with-null">Null</a>
         <ul class="pl-2 my-1 space-y-1 border-l border-black text-xs font-normal">
@@ -23,10 +24,9 @@
             <li><a class="hover:opacity-75" href="#nullsafe-operator">Nullsafe Operator</a></li>
         </ul>
     </li>
-    <li><a class="hover:opacity-75" href="#match-expression">Match Expression</a></li>
     <li><a class="hover:opacity-75" href="#named-arguments">Named Arguments</a></li>
     <li>
-        <a class="hover:opacity-75" href="#types">Performance</a>
+        <a class="hover:opacity-75" href="#performance">Performance</a>
         <ul class="pl-2 my-1 space-y-1 border-l border-black text-xs font-normal">
             <li><a class="hover:opacity-75" href="#jit">JIT</a></li>
             <li><a class="hover:opacity-75" href="#preloading">Preloading</a></li>
@@ -37,6 +37,7 @@
     <li>
         <a class="hover:opacity-75" href="#types">Types</a>
         <ul class="pl-2 my-1 space-y-1 border-l border-black text-xs font-normal">
+            <li><a class="hover:opacity-75" href="#built-in-types">Built-in Types</a></li>
             <li><a class="hover:opacity-75" href="#typed-properties">Typed Properties</a></li>
             <li><a class="hover:opacity-75" href="#union-types">Union Types</a></li>
         </ul>

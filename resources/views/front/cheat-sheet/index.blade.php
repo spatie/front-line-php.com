@@ -40,6 +40,22 @@
 
             @include('front.cheat-sheet.partials.attributes')
 
+            @include('front.cheat-sheet.partials.cosmetics')
+
+            @include('front.cheat-sheet.partials.exceptions')
+
+            @include('front.cheat-sheet.partials.match')
+
+            @include('front.cheat-sheet.partials.null')
+
+            @include('front.cheat-sheet.partials.named-arguments')
+
+            @include('front.cheat-sheet.partials.performance')
+
+            @include('front.cheat-sheet.partials.property-promotion')
+
+            @include('front.cheat-sheet.partials.short-closures')
+
             @include('front.cheat-sheet.partials.types')
 
         </article>

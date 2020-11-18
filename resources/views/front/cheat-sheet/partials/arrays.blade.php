@@ -4,71 +4,60 @@
         <x-card id="destructuring" title="Destructuring" level="2">
             You can destructure arrays to pull out several elements into separate variables:
 
-```
-$array = [1, 2, 3];
+<pre><code class="language- hljs ">$array = [1, 2, 3];
 
 // Using the list syntax:
-<code keyword>list</code>($a, $b, $c) = $array;
+<span class="hljs-highlight  keyword">list</span>($a, $b, $c) = $array;
 
 // Or the shorthand syntax:
-[$a, $b, $c] = $array;
-```
+[$a, $b, $c] = $array;</code></pre>
 
 You can skip elements:
 
-```php
-[, , $c] = $array;
+<pre><code class="language-php hljs php">[, , $c] = $array;
 
-// $c = 3
-```
+<span class="hljs-comment">// $c = 3</span></code></pre>
 
 As well as destructure based on keys:
 
-```php
-$array = [
-'a' => 1,
-'b' => 2,
-'c' => 3,
+<pre><code class="language-php hljs php">$array = [
+    <span class="hljs-string">'a'</span> =&gt; <span class="hljs-number">1</span>,
+    <span class="hljs-string">'b'</span> =&gt; <span class="hljs-number">2</span>,
+    <span class="hljs-string">'c'</span> =&gt; <span class="hljs-number">3</span>,
 ];
 
-['c' => $c, 'a' => $a] = $array;
-```
+[<span class="hljs-string">'c'</span> =&gt; $c, <span class="hljs-string">'a'</span> =&gt; $a] = $array;</code></pre>
+
         </x-card>
         <x-card id="rest-spread-operators" title="Rest and Spread Operators" level="2">
             Arrays can be spread into functions:
 
-```php
-$array = [1, 2];
+<pre><code class="language-php hljs php">$array = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
 
-function foo(<code type>int</code> $a, <code type>int</code> $b) { /* … */ }
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span><span class="hljs-params">(<span class="hljs-highlight  type">int</span> $a, <span class="hljs-highlight  type">int</span> $b)</span> </span>{ <span class="hljs-comment">/* … */</span> }
 
-<code prop>foo</code>(...$array);
-```
+<span class="hljs-highlight  prop">foo</span>(...$array);</code></pre>
 
 Arrays with numerical keys can also be spread into a new array:
 
-```php
-$a = [1, 2];
-$b = [3, 4];
 
-$result = [...$a, ...$b]; // [1, 2, 3, 4]
-```
+<pre><code class="language-php hljs php">$a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
+$b = [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+
+$result = [...$a, ...$b]; <span class="hljs-comment">// [1, 2, 3, 4]</span></code></pre>
 
 Functions can automatically collect the rest of the variables using the same operator:
 
-```php
-function foo($first, ...$other) { /* … */ }
 
-<code prop>foo</code>('a', 'b', 'c', 'd', …);
-```
+<pre><code class="language-php hljs php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span><span class="hljs-params">($first, ...$other)</span> </span>{ <span class="hljs-comment">/* … */</span> }
+
+<span class="hljs-highlight  prop">foo</span>(<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>, …);</code></pre>
 
 Rest parameters can even be type hinted:
 
-```php
-function foo($first, <code type>string</code> ...$other) { /* … */ }
+<pre><code class="language-php hljs php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span><span class="hljs-params">($first, <span class="hljs-highlight  type">string</span> ...$other)</span> </span>{ <span class="hljs-comment">/* … */</span> }
 
-<code prop>foo</code>('a', 'b', 'c', 'd', …);
-```
+<span class="hljs-highlight  prop">foo</span>(<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>, …);</code></pre>
         </x-card>
     </div>
 </x-card>

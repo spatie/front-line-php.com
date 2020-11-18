@@ -1,43 +1,45 @@
 <x-card id="types" title="Types" class="col-span-2">
-@markdown
-During the PHP 7.x releases and with PHP 8, several new built-in types were added:
 
-- <code type>void</code>: a return type indicating nothing's returned
-- <code type>static</code>: a return type representing the current class or its children
-- <code type>object</code>: anything that is an object
-- <code type>mixed</code>: anything
-@endmarkdown
     <div class="grid grid-cols-2 gap-6">
+        <x-card id="built-in-types" title="Built-in Types" level="2">
+            <p>During the PHP 7.x releases and with PHP 8, several new built-in types were added:</p>
+
+            <ul>
+                <li>
+                    <code><span class="hljs-highlight  type">void</span></code>: a return type indicating nothing's returned</li>
+                <li>
+                    <code><span class="hljs-highlight  type">static</span></code>: a return type representing the current class or its children</li>
+                <li>
+                    <code><span class="hljs-highlight  type">object</span></code>: anything that is an object</li>
+                <li>
+                    <code><span class="hljs-highlight  type">mixed</span></code>: anything</li>
+            </ul>
+        </x-card>
+
         <x-card id="typed-properties" title="Typed properties" level="2">
-            Add types to your class properties:
+            <p>Add types to your class properties:</p>
 
-            ```php
-            class Offer
-            {
-            public <code type>?string</code> <code prop>$offerNumber</code> = null;
+            <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Offer</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-highlight  type">?string</span> <span class="hljs-highlight  prop">$offerNumber</span> = <span class="hljs-keyword">null</span>;
 
-            public <code type>Money</code> <code prop>$totalPrice</code>;
-            }
-            ```
+    <span class="hljs-keyword">public</span> <span class="hljs-highlight  type">Money</span> <span class="hljs-highlight  prop">$totalPrice</span>;
+}</code></pre>
 
-            Beware of the `uninitialized` state, which is only checked when reading a property, and not when constructing the class:
+            <p>Beware of the <code>uninitialized</code> state, which is only checked when reading a property, and not when constructing the class:</p>
 
-            ```php
-            $offer = new <code type>Offer</code>();
+            <pre><code class="language-php hljs php">$offer = <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">Offer</span>();
 
-            $offer-><code prop>totalPrice</code>; // Error
-            ```
+$offer-&gt;<span class="hljs-highlight  prop">totalPrice</span>; <span class="hljs-comment">// Error</span></code></pre>
         </x-card>
 
         <x-card id="union-types" title="Union Types" level="2">
-            Combine several types into one union, which means that whatever input must match on of the given types:
+            <p>Combine several types into one union, which means that whatever input must match on of the given types:</p>
 
-            ```php
-            interface Repository
-            {
-            public function find(<code type>int|string</code> $id);
-            }
-            ```
+            <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Repository</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-highlight  type">int|string</span> $id)</span></span>;
+}</code></pre>
         </x-card>
     </div>
 </x-card>
