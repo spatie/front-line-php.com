@@ -1,6 +1,6 @@
 <x-card id="dealing-with-null" title="Dealing with null" class="col-span-2">
-    <div class="grid grid-cols-2 gap-6">
-        <x-card id="null-coalescing-operator" title="Null coalescing" level="2">
+    <div class="grid grid-cols-2 items-start gap-6">
+        <x-card id="null-coalescing-operator" title="Null Coalescing" level="2">
             <p>Use the null coalescing operator to provide a fallback when a property is <code>null</code>:</p>
 
             <pre><code class="language-php hljs php">$paymentDate = $invoice-&gt;<span class="hljs-highlight  prop">paymentDate</span> ?? <span class="hljs-highlight  type">Date</span>::<span class="hljs-highlight  prop">now</span>();</code></pre>
@@ -18,7 +18,7 @@
 <span class="hljs-comment">// $invoice-&gt;paymentDate is now also set</span></code></pre>
         </x-card>
 
-        <x-card id="nullsafe-operator" title="Nullsafe operator" level="2">
+        <x-card id="nullsafe-operator" title="Nullsafe Operator" level="2">
             <p>Chain methods that possibly return <code>null</code>:</p>
 
             <pre><code class="language-php hljs php">$invoice

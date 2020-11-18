@@ -16,7 +16,7 @@
             </ul>
         </x-card>
 
-        <x-card id="typed-properties" title="Typed properties" level="2">
+        <x-card id="typed-properties" title="Typed properties" level="2" class="row-span-2">
             <p>Add types to your class properties:</p>
 
             <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Offer</span>

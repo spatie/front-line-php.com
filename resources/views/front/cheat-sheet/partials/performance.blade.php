@@ -1,4 +1,4 @@
-<x-card id="performance" title="Performance">
+<x-card id="performance" title="Performance" class="row-span-2">
     <div class="grid gap-6">
         <x-card id="jit" title="The JIT" level="2">
             <p>Enable the JIT by specifying a buffer size in your ini settings; you can switch the jit mode between

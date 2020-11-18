@@ -68,7 +68,7 @@
 .markup h3,
 .markup-h3 {
     @apply font-bold;
-    @apply text-base;
+    @apply text-lg;
 }
 
 .markup-baseline {
@@ -162,7 +162,7 @@
 .markup-links .markup-anchor {
     background-image: none;
     @apply text-blue-500;
-    @apply text-opacity-25;
+    @apply opacity-0;
     @apply font-display;
     @apply absolute;
     @apply right-full;
@@ -170,9 +170,11 @@
     @apply text-base;
 }
 
-.markup-links .markup-anchor:hover {
-    @apply text-opacity-75;
+.markup-links [id]:hover > h2 > .markup-anchor,
+.markup-links [id]:hover > h3 > .markup-anchor {
+    @apply opacity-50;
 }
+
 
 /* Code styles */
 
@@ -187,18 +189,18 @@
 
 .markup-code pre {
     @apply font-mono;
-    @apply my-12;
-    @apply p-6;
+    @apply my-8;
+    @apply p-4;
     @apply overflow-x-auto;
     @apply bg-white;
-    font-size: 0.85em;
+    font-size: 0.8em;
     line-height: 1.8;
     background-color: rgba(0,0,0,0.025);
 }
 
 @screen md {
     .markup-code pre {
-        width: calc(33ch + 50vw + 1.5rem);
+        /* width: calc(33ch + 50vw + 1.5rem); */
     }
 }
 

@@ -34,7 +34,7 @@
         <nav class="text-sm w-64 lg:w-auto flex-none pb-12">
             @include('front.cheat-sheet.partials.nav')
         </nav>
-        <article class="grid grid-cols-2 gap-8 pb-24 markup markup-links markup-lists markup-code markup-tables">
+        <article class="grid grid-cols-2 gap-12 pb-24 markup markup-links markup-lists markup-code markup-tables">
 
             @include('front.cheat-sheet.partials.arrays')
 

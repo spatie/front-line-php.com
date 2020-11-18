@@ -28,6 +28,11 @@ module.exports = {
                 300: '#c1e2e8',
                 500: '#0756b0',  
             },
+            gray: {
+                200: '#daf1f5',
+                300: '#d9dbdb',
+                500: '#0756b0',  
+            },
             green: {
                 300: '#abcf73',
                 500: '#75ad20',
@@ -62,8 +67,6 @@ module.exports = {
         opacity: ["responsive", "hover", "focus", "group-hover"],
         backgroundColor: ({ after }) => after(['target']),
         boxShadow: ({ after }) => after(['target']),
-        textColor: ({ after }) => after(['target']),
-        backgroundOpacity: ({ after }) => after(['target'])
     },
     plugins: [
         plugin(function({ addVariant, e }) {
