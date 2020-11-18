@@ -1,8 +1,8 @@
 @extends('front.layouts.master')
 
-@section('title', 'PHP 8 Cheat Sheet')
+@section('title', 'Modern PHP Cheat Sheet')
 
-@section('description', 'PHP 8 Cheat Sheet from the book Front Line PHP')
+@section('description', 'Modern PHP Cheat Sheet from the book Front Line PHP')
 
 @section('content')
 <header>
