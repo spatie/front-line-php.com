@@ -16,15 +16,25 @@
         <div class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
             Launching November 19<sup>th</sup> 2020
         </div>
-        <h1 class="font-display text-5xl sm:text-6xl md:text-7xl leading-none">
-            Front Line PHP
-        </h1>
-        <p class="mt-2 font-semibold text-3xl sm:text-4xl leading-snug">
-            Building modern applications
-            <br>
-            with PHP 8
-        </p>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="md:pr-12">
+                <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-none">
+                    Front Line PHP
+                </h1>
+                <p class="mt-2 font-semibold text-3xl sm:text-4xl md:text-3xl lg:text-4xl leading-snug">
+                    Building modern applications
+                    <br>
+                    with PHP 8
+                </p>
+            </div>
+            
+            <div class="md:-mt-24 lg:-mt-24 pt-2">
+            @include('partials.priceCard')
+            </div>
+        </div>
     </div>
+
 </header>
 
 <main class="mx-auto max-w-5xl px-4 sm:px-16 mt-16" style="background-image: linear-gradient(to top, #fff 20%, #daf1f5)">
@@ -71,7 +81,6 @@
     </section>
 
     <section class="mb-24">
-
         <div class="mb-8 bg-white" >
             <h3 class="px-6 md:px-12 lg:px-24 pt-12 lg:pt-24 text-base">
                 <div class="text-3xl font-display leading-none" :class="">Foreword</div>

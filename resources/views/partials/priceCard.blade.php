@@ -2,11 +2,11 @@
     $expiresAt = \Carbon\Carbon::createFromFormat('Y-m-d H', '2020-09-11 18', 'Europe/Brussels')
 @endphp
 
-<section class="px-8 flex justify-center">
-    <div class="max-w-md mx-auto xs:flex xs:w-full">
-        <div class="z-10 xs:z-30 xs:fix-z -mt-6 -mx-4 flex-grow shadow-2xl">
+<section class="flex justify-center">
+    <div class="w-full">
+        <div class="z-10 flex-grow shadow-2xl border border-black">
             <div class="bg-yellow-500 h-6"></div>
-            <div class="border-l border-r border-b border-gray-200 bg-white">
+            <div class="bg-white">
                 <div class="text-center pt-4 pb-12 leading-none">
                     <div class="font-display font-semibold text-3xl">
                         @if($expiresAt->isFuture())
@@ -34,12 +34,9 @@
                 </div>
                 <div class="text-center z-10 -mb-3">
                     <a href="https://spatie.be/products/laravel-beyond-crud">
-                        <button class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-yellow-500 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg hover:shadow-xl hover:bg-yellow-600">
-                            <span style="bottom: -0.05rem">Buy bundle</span>
-                            <span class="ml-3 flex-0 w-6 text-base h-6 text-sm bg-white bg-opacity-50 rounded-full flex items-center justify-center font-sans text-yellow-800">
-                                &rarr;
-                            </span>
-                        </button>
+                        <x-button icon="fas fa-play" :primary=true>
+                            Buy book
+                        </x-button>
                     </a>
                 </div>
                 <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-100">
