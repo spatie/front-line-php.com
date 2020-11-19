@@ -13,7 +13,7 @@
         <meta name="description" content="@yield('description')">
         <link rel="canonical" href="{{ url()->current() }}"/>
 
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
