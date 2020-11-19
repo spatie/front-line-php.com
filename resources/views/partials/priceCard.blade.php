@@ -15,7 +15,7 @@
                                 <div>{{ $coupon->label() }} ending in</div>
                                 <div
                                     class="bg-blue-200 z-10 transform rotate-0 font-sans font-normal text-black text-opacity-75 px-1 py-1"
-                                    style="--transform-rotate: -1.5deg !important; font-variant-numeric:">
+                                    style="--transform-rotate: -1.5deg !important; font-variant-numeric:tabular-nums">
                                     <x-countdown :expires="$coupon->expiresAt()">
                                         <span class="font-bold bg-white bg-opacity-25 px-1"><span
                                                 x-text="timer.days">{{ $component->days() }}</span> <span class="font-display text-black text-opacity-50">days</span></span>

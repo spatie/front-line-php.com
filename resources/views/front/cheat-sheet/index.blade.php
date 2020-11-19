@@ -62,7 +62,7 @@
     </div>
 
     <div class="max-w-5xl mx-auto">
-        @include('partials.cta-newsletter')
+        @include('partials.cta-promo')
     </div>
 </main>
 

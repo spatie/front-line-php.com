@@ -215,7 +215,7 @@
         </div>
     </section>
 
-    @include('partials.cta-home')
+    @include('partials.cta-promo')
 </main>
 
 @include('partials.footer')

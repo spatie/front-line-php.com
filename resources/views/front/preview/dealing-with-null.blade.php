@@ -7,7 +7,7 @@
 @section('description', 'Dealing with null — Building modern applications with PHP 8')
 
 @section('footer_cta')
-    @include('partials.cta-newsletter')
+    @include('partials.cta-promo')
 @endsection
 
 @section('article')
