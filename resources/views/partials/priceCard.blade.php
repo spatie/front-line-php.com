@@ -3,9 +3,9 @@
 @endphp
 
 <section class="flex justify-center">
-    <div class="w-full">
+    <div class="max-w-xl w-full">
         <div class="z-10 flex-grow shadow-2xl border border-black">
-            <div style="background-image: linear-gradient(to right, #0756b0 0%, #4530a8 80%)" class="h-6"></div>
+            <div style="background-image: linear-gradient(to right, #0756b0 0%, #4530a8 80%)" class="-mt-px h-6"></div>
             <div class="bg-white">
                 <div class="text-center pt-4 pb-12 leading-none">
                     <div class="font-display font-semibold text-3xl">
@@ -14,24 +14,23 @@
                                 class="flex flex-col items-center mb-6 text-center text-gray-700 uppercase text-xs tracking-widest leading-snug">
                                 <div>{{ $coupon->label() }} ending in</div>
                                 <div
-                                    class="z-10 transform rotate-0 bg-purple-500 bg-opacity-75 font-sans font-normal text-white px-1 py-1 shadow-md"
-                                    style="--transform-rotate: -1.5deg !important; font-variant-numeric: tabular-nums;background-image: linear-gradient(to right, #0756b0 0%, #4530a8 80%)">
+                                    class="bg-blue-200 z-10 transform rotate-0 font-sans font-normal text-black text-opacity-75 px-1 py-1"
+                                    style="--transform-rotate: -1.5deg !important; font-variant-numeric:">
                                     <x-countdown :expires="$coupon->expiresAt()">
-                                        <span class="font-semibold bg-purple-500 bg-opacity-50 px-1"><span
-                                                x-text="timer.days">{{ $component->days() }}</span> <span class="font-display">days</span></span>
-                                        <span class="font-semibold bg-purple-500 bg-opacity-50 px-1"><span
-                                                x-text="timer.hours">{{ $component->hours() }}</span> <span class="font-display">hours</span></span>
-                                        <span class="font-semibold bg-purple-500 bg-opacity-50 px-1"><span
-                                                x-text="timer.minutes">{{ $component->minutes() }}</span> <span class="font-display">minutes</span></span>
-                                        <span class="font-semibold bg-purple-500 bg-opacity-50 px-1"><span
-                                                x-text="timer.seconds">{{ $component->seconds() }}</span> <span class="font-display">seconds</span></span>
+                                        <span class="font-bold bg-white bg-opacity-25 px-1"><span
+                                                x-text="timer.days">{{ $component->days() }}</span> <span class="font-display text-black text-opacity-50">days</span></span>
+                                        <span class="font-bold bg-white bg-opacity-25 px-1"><span
+                                                x-text="timer.hours">{{ $component->hours() }}</span> <span class="font-display text-black text-opacity-50">hours</span></span>
+                                        <span class="font-bold bg-white bg-opacity-25 px-1"><span
+                                                x-text="timer.minutes">{{ $component->minutes() }}</span> <span class="font-display text-black text-opacity-50">minutes</span></span>
+                                        <span class="font-bold bg-white bg-opacity-25 px-1"><span
+                                                x-text="timer.seconds">{{ $component->seconds() }}</span> <span class="font-display text-black text-opacity-50">seconds</span></span>
                                     </x-countdown>
                                 </div>
                             </div>
                         @endif
-                        Ebook
                     </div>
-                    <div class="flex justify-center mt-3">
+                    <div class="flex justify-center mt-4">
                         <div>
                             <sup class="text-gray-500 text-3xl" data-id="current-currency-{{ config('services.paddle.product_id') }}"></sup><span
                                 class="font-bold text-5xl" data-id="current-price-{{ config('services.paddle.product_id') }}">—</span>
@@ -44,14 +43,14 @@
 
                      @if ($coupon->active())
                         <div class="mt-4 text-gray-500 text-xs">
-                            {{ $coupon->percentage() }}% off with coupon <code class="px-2 py-1 text-gray-700 bg-gray-200 bg-opacity-25">{{ $coupon->code() }}</code>
+                            {{ $coupon->percentage() }}% off with coupon <code class="px-2 py-1 text-gray-700 bg-gray-100">{{ $coupon->code() }}</code>
                         </div>
                     @endif
                 </div>
-                <div class="text-center z-10 -mb-3">
-                    <a href="https://spatie.be/products/laravel-beyond-crud">
+                <div class="text-center z-10 -mt-3 -mb-3">
+                    <a href="https://spatie.be/products/front-line-php">
                         <x-button icon="fas fa-play" :primary=true>
-                            Buy book
+                            Buy Ebook
                         </x-button>
                     </a>
                 </div>
@@ -59,14 +58,13 @@
                     <div>
                         <ul class="pb-6 leading-relaxed">
                             <li class="font-semibold"><i class="fas fa-check text-xs text-blue-500"></i> 250 pages of premium content</li>
-                            <li class="font-semibold"><i class="fas fa-check text-xs text-blue-500"></i> 2 hours of free videos</li>
-                            <li><i class="fas fa-check text-xs text-blue-500"></i> Example source code download</li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i> More than a dozen <a class="markup-link font-semibold" href="https://spatie.be/videos/front-line-php">free videos</a></li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i> A free <a class="markup-link font-semibold" href="{{ route("cheat-sheet") }}">cheat sheet</a></li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> All beautifully designed</li>
                         </ul>
 
                         <p class="text-xs text-gray-600">
                             Prices exclusive of VAT for buyers without a valid VAT number.
-                            <br>
                             <br>
                             We use purchasing power parity provided by Paddle.
                             <br>

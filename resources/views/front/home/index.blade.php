@@ -14,7 +14,7 @@
 
     <div class="mx-auto max-w-5xl px-4 sm:px-16 py-16">
         <div class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
-            Launching November 19<sup>th</sup> 2020
+            Just launched!
         </div>
         
         <div class="grid md:grid-cols-2 gap-8">
@@ -172,7 +172,7 @@
                     <li>Type variance</li>
                     <li>Async PHP</li>
                     <li>Event driven development</li>
-                    <li>Cheat Sheet</li>
+                    <li><a href="{{ route('cheat-sheet') }}">Cheat Sheet</a></li>
                 </ol>
             </div>
 
