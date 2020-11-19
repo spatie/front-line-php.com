@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/JetBrainsMono-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-display: swap;
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMono-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/JetBrainsMono-Italic.woff') format('woff'); /* Pretty Modern Browsers */
+    font-display: swap;
+    font-weight: 400; 
+    font-style: italic;
+}
+
+* {
+    position: relative;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 13px;
+    scroll-behavior: smooth;
+}
+
+@screen sm {
+    html {
+        font-size: 14px;
+    }
+}
+
+@screen md {
+    html {
+        font-size: 15px;
+    }
+}
+
+@screen lg {
+    html {
+        font-size: 16px;
+    }
+}
+
+@screen xl {
+    html {
+        font-size: 18px;
+    }
+}
