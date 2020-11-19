@@ -15,6 +15,9 @@
             <h1 class="font-display text-4xl sm:text-5xl md:text-6xl leading-none">
                  @yield('title')
             </h1>
+            <p>
+                @yield('subtitle')
+            </p>
         </div>
     </header>
 

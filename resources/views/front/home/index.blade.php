@@ -130,7 +130,7 @@
                 <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
                     <li>PHP today</li>
                     <li>New versions</li>
-                    <li>PHP's type system</li>
+                    <li><a href="{{ route('dealing-with-null') }}">PHP's type system</a></li>
                     <li>Static analysis</li>
                     <li>Property promotion</li>
                     <li>Named arguments</li>

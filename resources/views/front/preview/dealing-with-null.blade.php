@@ -2,6 +2,8 @@
 
 @section('title', 'Dealing with null')
 
+@section('subtitle', 'Excerpt from Chapter "PHP\'s Type System"')
+
 @section('description', 'Dealing with null — Building modern applications with PHP 8')
 
 @section('footer_cta')
