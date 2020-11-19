@@ -4,8 +4,8 @@
 
 <section class="flex justify-center">
     <div class="max-w-xl w-full">
-        <div class="z-10 flex-grow shadow-2xl border border-black">
-            <div style="background-image: linear-gradient(to right, #0756b0 0%, #4530a8 80%)" class="-mt-px h-6"></div>
+        <div class="z-10 flex-grow shadow-2xl">
+            <div class="bg-yellow-500 -mt-px h-6"></div>
             <div class="bg-white">
                 <div class="text-center pt-4 pb-12 leading-none">
                     <div class="font-display font-semibold text-3xl">
