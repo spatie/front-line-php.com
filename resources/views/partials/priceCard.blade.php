@@ -11,20 +11,20 @@
                     <div class="font-display font-semibold text-3xl">
                         @if($coupon->active())
                             <div
-                                class="flex flex-col items-center mb-6 text-center text-gray-700 uppercase text-xs tracking-widest leading-snug">
+                                class="flex flex-col items-center mb-6 text-center text-gray-700  text-xs leading-snug">
                                 <div>{{ $coupon->label() }} ending in</div>
                                 <div
                                     class="bg-blue-200 z-10 transform rotate-0 font-sans font-normal text-black text-opacity-75 px-1 py-1"
                                     style="--transform-rotate: -1.5deg !important; font-variant-numeric:tabular-nums">
                                     <x-countdown :expires="$coupon->expiresAt()">
                                         <span class="font-bold bg-white bg-opacity-25 px-1"><span
-                                                x-text="timer.days">{{ $component->days() }}</span> <span class="font-display text-black text-opacity-50">days</span></span>
+                                                x-text="timer.days">{{ $component->days() }}</span> <span class="font-semibold text-black text-opacity-75">days</span></span>
                                         <span class="font-bold bg-white bg-opacity-25 px-1"><span
-                                                x-text="timer.hours">{{ $component->hours() }}</span> <span class="font-display text-black text-opacity-50">hours</span></span>
+                                                x-text="timer.hours">{{ $component->hours() }}</span> <span class="font-semibold text-black text-opacity-75">hours</span></span>
                                         <span class="font-bold bg-white bg-opacity-25 px-1"><span
-                                                x-text="timer.minutes">{{ $component->minutes() }}</span> <span class="font-display text-black text-opacity-50">minutes</span></span>
+                                                x-text="timer.minutes">{{ $component->minutes() }}</span> <span class="font-semibold text-black text-opacity-75">minutes</span></span>
                                         <span class="font-bold bg-white bg-opacity-25 px-1"><span
-                                                x-text="timer.seconds">{{ $component->seconds() }}</span> <span class="font-display text-black text-opacity-50">seconds</span></span>
+                                                x-text="timer.seconds">{{ $component->seconds() }}</span> <span class="font-semibold text-black text-opacity-75">seconds</span></span>
                                     </x-countdown>
                                 </div>
                             </div>
