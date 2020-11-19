@@ -1,12 +1,14 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
     important: true,
     theme: {
         fontFamily: {
             sans: ["Inter", ...defaultTheme.fontFamily.sans],
             display: ["Staatliches", ...defaultTheme.fontFamily.sans],
-            mono: ["IBM Plex Mono", ...defaultTheme.fontFamily.mono]
+            mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono]
         },
         colors: {
             transparent: "transparent",
@@ -23,7 +25,13 @@ module.exports = {
             },
             blue: {
                 200: '#daf1f5',
-                500: '#0756b0'
+                300: '#c1e2e8',
+                500: '#0756b0',  
+            },
+            gray: {
+                200: '#daf1f5',
+                300: '#d9dbdb',
+                500: '#0756b0',  
             },
             green: {
                 300: '#abcf73',
@@ -56,6 +64,17 @@ module.exports = {
         }
     },
     variants: {
-        opacity: ["responsive", "hover", "focus", "group-hover"]
-    }
+        opacity: ["responsive", "hover", "focus", "group-hover"],
+        backgroundColor: ({ after }) => after(['target']),
+        boxShadow: ({ after }) => after(['target']),
+    },
+    plugins: [
+        plugin(function({ addVariant, e }) {
+          addVariant('target', ({ modifySelectors, separator }) => {
+            modifySelectors(({ className }) => {
+              return `.${e(`target${separator}${className}`)}:target`
+            })
+          })
+        })
+      ]
 };
