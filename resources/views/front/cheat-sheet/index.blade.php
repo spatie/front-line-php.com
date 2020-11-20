@@ -34,31 +34,35 @@
         <nav class="text-sm w-64 lg:w-auto flex-none pb-12">
             @include('front.cheat-sheet.partials.nav')
         </nav>
-        <article class="grid lg:grid-cols-2 gap-12 pb-24 markup markup-links markup-lists markup-code markup-tables">
+        <div>
+            @include('partials.cta-compact')
+            <article class="grid lg:grid-cols-2 gap-12 pb-24 markup markup-links markup-lists markup-code markup-tables">
 
-            @include('front.cheat-sheet.partials.arrays')
 
-            @include('front.cheat-sheet.partials.attributes')
+                @include('front.cheat-sheet.partials.arrays')
 
-            @include('front.cheat-sheet.partials.cosmetics')
+                @include('front.cheat-sheet.partials.attributes')
 
-            @include('front.cheat-sheet.partials.exceptions')
+                @include('front.cheat-sheet.partials.cosmetics')
 
-            @include('front.cheat-sheet.partials.match')
+                @include('front.cheat-sheet.partials.exceptions')
 
-            @include('front.cheat-sheet.partials.null')
+                @include('front.cheat-sheet.partials.match')
 
-            @include('front.cheat-sheet.partials.named-arguments')
+                @include('front.cheat-sheet.partials.null')
 
-            @include('front.cheat-sheet.partials.performance')
+                @include('front.cheat-sheet.partials.named-arguments')
 
-            @include('front.cheat-sheet.partials.property-promotion')
+                @include('front.cheat-sheet.partials.performance')
 
-            @include('front.cheat-sheet.partials.short-closures')
+                @include('front.cheat-sheet.partials.property-promotion')
 
-            @include('front.cheat-sheet.partials.types')
+                @include('front.cheat-sheet.partials.short-closures')
 
-        </article>
+                @include('front.cheat-sheet.partials.types')
+
+            </article>
+        </div>
     </div>
 
     <div class="max-w-5xl mx-auto">
