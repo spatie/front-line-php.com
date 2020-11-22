@@ -1,5 +1,5 @@
 <x-card id="exceptions" title="Exceptions">
-    <p>Throwing an exception is an expression now, which means there are more places you can throw from, such a short closures or as a null coalescing fallback:</p>
+    <p>Throwing an exception is an expression now, which means there are more places you can throw from, such as short closures or as a null coalescing fallback:</p>
 
 <pre><code class="language-php hljs php">$error = <span class="hljs-highlight  keyword">fn</span>($message) =&gt; <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-highlight  type">Error</span>($message);
 

@@ -34,7 +34,7 @@ $offer-&gt;<span class="hljs-highlight  prop">totalPrice</span>; <span class="hl
         </x-card>
 
         <x-card id="union-types" title="Union Types" level="2">
-            <p>Combine several types into one union, which means that whatever input must match on of the given types:</p>
+            <p>Combine several types into one union, which means that whatever input must match one of the given types:</p>
 
             <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Repository</span>
 </span>{
