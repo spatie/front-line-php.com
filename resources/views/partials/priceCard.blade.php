@@ -68,7 +68,7 @@
                             <br>
                             We use purchasing power parity provided by Paddle.
                             <br>
-                            <a class="underline" href="mailto:info@spatie.be?subject=CRUD%20for%20students">Contact us</a> if your currency is <a class="underline" target="_blank" href="https://paddle.com/support/what-currencies-do-you-support/">not supported</a> or if you are a student.
+                            <a class="underline" href="mailto:info@spatie.be?subject=Front%20Line%20PHP%20for%20students">Contact us</a> if your currency is <a class="underline" target="_blank" href="https://paddle.com/support/what-currencies-do-you-support/">not supported</a> or if you are a student.
                         </p>
                     </div>
                 </div>
