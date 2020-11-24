@@ -1,1 +1,1 @@
-<small class="{{ $class ?? null }} font-sans font-bold bg-blue-500 text-white px-2 py-1 text-xs">{{ $slot }}</small>
+<small class="{{ $class ?? null }} inline-block font-sans font-semibold border border-black  border-opacity-50 bg-opacity-75 text-black px-1 text-xxs">{{ $slot }}</small>

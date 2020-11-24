@@ -7,7 +7,7 @@
         {{ $attributes['title'] }}
 
         @if($attributes['php'] ?? null)
-            <x-tag class="ml-2">PHP {{ $attributes['php'] }}</x-tag>
+            <x-tag class="ml-2">{{ $attributes['php'] }}</x-tag>
         @endif
     </h{{ $attributes['level'] == 2 ? '3' : '2' }}>
 
