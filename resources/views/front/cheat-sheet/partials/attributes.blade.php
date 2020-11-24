@@ -28,7 +28,7 @@ You can add them to properties, (anonymous) classes, functions, constants, closu
 Use reflection to get them, you can pass in optional arguments to `<hljs prop>getAttributes</hljs>` in order to filter the result:
 
 <pre><code class="language-php hljs php">$attributes = $reflectionClass-&gt;<span class="hljs-highlight  prop">getAttributes</span>(
-    <span class="hljs-highlight  type">ContainerAttribute</span>::class,
+    <span class="hljs-highlight  type">ContainerAttribute</span><span class="hljs-highlight  keyword">::class</span>,
     <span class="hljs-highlight  type">ReflectionAttribute</span>::<span class="hljs-highlight  prop">IS_INSTANCEOF</span>
 );</code></pre>
 
