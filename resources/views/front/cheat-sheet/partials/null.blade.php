@@ -9,12 +9,13 @@
 
             <pre><code class="language-php hljs php">$input = $data[<span class="hljs-string">'few'</span>][<span class="hljs-string">'levels'</span>][<span class="hljs-string">'deep'</span>] ?? <span class="hljs-string">'foo'</span>;</code></pre>
 
-            <p>
-                <x-tag class="ml-0">PHP 7.4</x-tag>
-                <br>
+
+            <div class="flex items-center">
+                <x-tag class="mr-2">7.4</x-tag>
                 You can use the null coalescing
-                <em>assignment</em> operator to write the value into the original variable when it's <code>null</code>:
-            </p>
+                <em>assignment</em> operator to write the value into the original variable when it's
+                <code>null</code>:
+            </div>
 
             <pre><code class="language-php hljs php">$temporaryPaymentDate = $invoice-&gt;<span class="hljs-highlight  prop">paymentDate</span> ??= <span class="hljs-highlight  type">Date</span>::<span class="hljs-highlight  prop">now</span>();
 

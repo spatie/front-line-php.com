@@ -6,16 +6,16 @@
 
             <ul>
                 <li>
-                    <code><span class="hljs-highlight  type">void</span></code>: a return type indicating nothing's returned <x-tag>PHP 7.1</x-tag>
+                    <code><span class="hljs-highlight  type">void</span></code>: a return type indicating nothing's returned <x-tag>7.1</x-tag>
                 </li>
                 <li>
-                    <code><span class="hljs-highlight  type">static</span></code>: a return type representing the current class or its children <x-tag>PHP 8.0</x-tag>
+                    <code><span class="hljs-highlight  type">static</span></code>: a return type representing the current class or its children <x-tag>8.0</x-tag>
                 </li>
                 <li>
-                    <code><span class="hljs-highlight  type">object</span></code>: anything that is an object <x-tag>PHP 7.2</x-tag>
+                    <code><span class="hljs-highlight  type">object</span></code>: anything that is an object <x-tag>7.2</x-tag>
                 </li>
                 <li>
-                    <code><span class="hljs-highlight  type">mixed</span></code>: anything <x-tag>PHP 8.0</x-tag></li>
+                    <code><span class="hljs-highlight  type">mixed</span></code>: anything <x-tag>8.0</x-tag></li>
             </ul>
         </x-card>
 

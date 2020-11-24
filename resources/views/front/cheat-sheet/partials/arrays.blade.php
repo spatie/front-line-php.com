@@ -38,14 +38,6 @@ As well as destructure based on keys:
 
 <span class="hljs-highlight  prop">foo</span>(...$array);</code></pre>
 
-Arrays with numerical keys can also be spread into a new array:
-
-
-<pre><code class="language-php hljs php">$a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
-$b = [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
-
-$result = [...$a, ...$b]; <span class="hljs-comment">// [1, 2, 3, 4]</span></code></pre>
-
 Functions can automatically collect the rest of the variables using the same operator:
 
 
@@ -58,6 +50,17 @@ Rest parameters can even be type hinted:
 <pre><code class="language-php hljs php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span><span class="hljs-params">($first, <span class="hljs-highlight  type">string</span> ...$other)</span> </span>{ <span class="hljs-comment">/* … */</span> }
 
 <span class="hljs-highlight  prop">foo</span>(<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>, <span class="hljs-string">'d'</span>, …);</code></pre>
+
+
+            <div class="flex items-center">
+                <x-tag class="mr-2">7.4</x-tag> Arrays with numerical keys can also be spread into a new array:
+            </div>
+
+
+            <pre><code class="language-php hljs php">$a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
+$b = [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+
+$result = [...$a, ...$b]; <span class="hljs-comment">// [1, 2, 3, 4]</span></code></pre>
         </x-card>
     </div>
 </x-card>
