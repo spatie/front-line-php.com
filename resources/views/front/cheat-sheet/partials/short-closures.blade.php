@@ -1,4 +1,4 @@
-<x-card id="short-closures" title="Short Closures" class="lg:row-span-2">
+<x-card id="short-closures" title="Short Closures" class="lg:row-span-2" php="7.4">
     <p>Short closures have automatic access to the outer scope, and only allow a single expression which is automatically returned:</p>
 
     <pre><code class="language-php hljs php"><span class="hljs-highlight  prop">array_map</span>(

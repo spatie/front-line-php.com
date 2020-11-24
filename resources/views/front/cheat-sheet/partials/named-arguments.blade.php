@@ -1,4 +1,4 @@
-<x-card id="named-arguments" title="Named Arguments">
+<x-card id="named-arguments" title="Named Arguments" php="8.0">
     <p>Pass in arguments by name instead of their position:</p>
 
     <pre><code class="language-php hljs php"><span class="hljs-highlight  prop">setcookie</span>(

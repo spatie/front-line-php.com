@@ -1,4 +1,4 @@
-<x-card id="attributes" title="Attributes" class="lg:col-span-2">
+<x-card id="attributes" title="Attributes" class="lg:col-span-2" php="8.0">
 
     Make your own by tagging a class with <code><span class="hljs-highlight  comment">#[<span class="hljs-highlight  type">Attribute</span>]</span></code>
 

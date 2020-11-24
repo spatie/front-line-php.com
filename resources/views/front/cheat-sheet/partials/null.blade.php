@@ -1,6 +1,6 @@
 <x-card id="dealing-with-null" title="Dealing with null" class="lg:col-span-2">
     <div class="grid lg:grid-cols-2 items-start gap-6">
-        <x-card id="null-coalescing-operator" title="Null Coalescing" level="2">
+        <x-card id="null-coalescing-operator" title="Null Coalescing" level="2" php="7.0">
             <p>Use the null coalescing operator to provide a fallback when a property is <code>null</code>:</p>
 
             <pre><code class="language-php hljs php">$paymentDate = $invoice-&gt;<span class="hljs-highlight  prop">paymentDate</span> ?? <span class="hljs-highlight  type">Date</span>::<span class="hljs-highlight  prop">now</span>();</code></pre>
@@ -9,7 +9,10 @@
 
             <pre><code class="language-php hljs php">$input = $data[<span class="hljs-string">'few'</span>][<span class="hljs-string">'levels'</span>][<span class="hljs-string">'deep'</span>] ?? <span class="hljs-string">'foo'</span>;</code></pre>
 
-            <p>You can use the null coalescing
+            <p>
+                <x-tag class="ml-0">PHP 7.4</x-tag>
+                <br>
+                You can use the null coalescing
                 <em>assignment</em> operator to write the value into the original variable when it's <code>null</code>:
             </p>
 
@@ -18,7 +21,7 @@
 <span class="hljs-comment">// $invoice-&gt;paymentDate is now also set</span></code></pre>
         </x-card>
 
-        <x-card id="nullsafe-operator" title="Nullsafe Operator" level="2">
+        <x-card id="nullsafe-operator" title="Nullsafe Operator" level="2" php="8.0">
             <p>Chain methods that possibly return <code>null</code>:</p>
 
             <pre><code class="language-php hljs php">$invoice

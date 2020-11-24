@@ -1,4 +1,4 @@
-<x-card id="property-promotion" title="Property Promotion" class="lg:row-span-3">
+<x-card id="property-promotion" title="Property Promotion" class="lg:row-span-3" php="8.0">
     <p>Prefix constructor arguments with <code><span class="hljs-highlight  keyword">public</span></code>, <code><span class="hljs-highlight  keyword">protected</span></code> or <code><span class="hljs-highlight  keyword">private</span></code> to make them promoted:</p>
 
     <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomerDTO</span>

@@ -1,7 +1,7 @@
 <x-card id="arrays" title="Arrays" class="lg:col-span-2">
 
     <div class="grid lg:grid-cols-2 gap-6">
-        <x-card id="destructuring" title="Destructuring" level="2">
+        <x-card id="destructuring" title="Destructuring" level="2" php="7.1">
             You can destructure arrays to pull out several elements into separate variables:
 
 <pre><code class="language- hljs ">$array = [1, 2, 3];
@@ -29,7 +29,7 @@ As well as destructure based on keys:
 [<span class="hljs-string">'c'</span> =&gt; $c, <span class="hljs-string">'a'</span> =&gt; $a] = $array;</code></pre>
 
         </x-card>
-        <x-card id="rest-spread-operators" title="Rest and Spread Operators" level="2">
+        <x-card id="rest-spread-operators" title="Rest and Spread Operators" level="2" php="5.6">
             Arrays can be spread into functions:
 
 <pre><code class="language-php hljs php">$array = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];

@@ -1,4 +1,4 @@
-<x-card id="match-expression" title="Match">
+<x-card id="match-expression" title="Match" php="8.0">
     <p>Similar to <code><span class="hljs-highlight  keyword">switch</span></code>, but with strong type checks, no
         <code><span class="hljs-highlight  keyword">break</span></code> keyword, combined arms and it returns a value:
     </p>

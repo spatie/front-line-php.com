@@ -6,17 +6,20 @@
 
             <ul>
                 <li>
-                    <code><span class="hljs-highlight  type">void</span></code>: a return type indicating nothing's returned</li>
+                    <code><span class="hljs-highlight  type">void</span></code>: a return type indicating nothing's returned <x-tag>PHP 7.1</x-tag>
+                </li>
                 <li>
-                    <code><span class="hljs-highlight  type">static</span></code>: a return type representing the current class or its children</li>
+                    <code><span class="hljs-highlight  type">static</span></code>: a return type representing the current class or its children <x-tag>PHP 8.0</x-tag>
+                </li>
                 <li>
-                    <code><span class="hljs-highlight  type">object</span></code>: anything that is an object</li>
+                    <code><span class="hljs-highlight  type">object</span></code>: anything that is an object <x-tag>PHP 7.2</x-tag>
+                </li>
                 <li>
-                    <code><span class="hljs-highlight  type">mixed</span></code>: anything</li>
+                    <code><span class="hljs-highlight  type">mixed</span></code>: anything <x-tag>PHP 8.0</x-tag></li>
             </ul>
         </x-card>
 
-        <x-card id="typed-properties" title="Typed properties" level="2" class="row-span-2">
+        <x-card id="typed-properties" title="Typed properties" level="2" class="row-span-2" php="7.4">
             <p>Add types to your class properties:</p>
 
             <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Offer</span>
@@ -33,7 +36,7 @@
 $offer-&gt;<span class="hljs-highlight  prop">totalPrice</span>; <span class="hljs-comment">// Error</span></code></pre>
         </x-card>
 
-        <x-card id="union-types" title="Union Types" level="2">
+        <x-card id="union-types" title="Union Types" level="2" php="8.0">
             <p>Combine several types into one union, which means that whatever input must match one of the given types:</p>
 
             <pre><code class="language-php hljs php"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Repository</span>
