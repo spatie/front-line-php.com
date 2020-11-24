@@ -17,8 +17,8 @@
 You can add them to properties, (anonymous) classes, functions, constants, closures, function arguments:
 
 <pre><code class="language-php hljs php"><span class="hljs-comment">#[</span>
-    <span class="hljs-highlight  type">Route</span>(<span class="hljs-highlight  type">Http</span>::<span class="hljs-highlight  prop">POST</span>, <span class="hljs-string">'/products/create'</span>)
-    <span class="hljs-highlight  type">Autowire</span>
+    <span class="hljs-highlight  type">Route</span>(<span class="hljs-highlight  type">Http</span>::<span class="hljs-highlight  prop">POST</span>, <span class="hljs-string">'/products/create'</span>),
+    <span class="hljs-highlight  type">Autowire</span>,
 <span class="hljs-highlight  comment">]</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ProductsCreateController</span>
 </span>{
