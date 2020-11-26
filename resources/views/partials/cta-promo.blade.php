@@ -7,13 +7,13 @@
 
     @if($prices['couldFetchPrice'] && $prices['discount']->active)
         <h2 class="text-6xl font-display mb-8 leading-none text-white text-opacity-90">
-            {{ $discount->name }}
+            {{ $prices['discount']->active }}
         </h2>
         <div class="block text-xl md:text-2xl font-semibold leading-relaxed text-white text-opacity-90">
-            Get {{ $discount->percentage }}% off on the entire ebook for the next
+            Get {{ $prices['discount']->percentage }}% off on the entire ebook for the next
             <div>
                 <div class="font-sans font-normal px-1 py-1" style="font-variant-numeric:tabular-nums">
-                    <x-countdown :expires="$discount->expiresAt()">
+                    <x-countdown :expires="$prices['discount']->expiresAt()">
                         <span class="font-bold bg-white bg-opacity-25 px-1"><span
                                 x-text="timer.days">{{ $component->days() }}</span> <span
                                 class="font-semibold text-white text-opacity-75">days</span></span>
