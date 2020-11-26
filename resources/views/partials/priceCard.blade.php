@@ -33,13 +33,13 @@
                         </div>
                         <div class="flex justify-center mt-4">
                             <div>
-                                <span class="font-bold text-5xl">{{ $price->formattedPrice() }}</span>
+                                <span class="font-bold text-5xl whitespace-no-wrap">{{ $price->formattedPrice() }}</span>
                                 @if($discount->active)
                                     <span class="absolute right-full mr-4 top-0 mt-2">
-                                    <span class="text-gray-500 line-through">
-                                        {{ $priceWithoutDiscount->formattedPrice() }}
+                                        <span class="text-gray-500 line-through whitespace-no-wrap">
+                                            {{ $priceWithoutDiscount->formattedPrice() }}
+                                        </span>
                                     </span>
-                                </span>
                                 @endif
                             </div>
                         </div>
