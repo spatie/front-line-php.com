@@ -9,7 +9,7 @@ class HomeController
     public function __invoke()
     {
         $purchasableId = config('services.spatie_prices_api.purchasable_id');
-        $purchasableId = 1;
+
         $prices = SpatiePriceApi::getPriceForPurchasable($purchasableId);
 
         return view('front.home.index', [
