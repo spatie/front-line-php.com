@@ -7,7 +7,7 @@
 
     @if($prices['couldFetchPrice'] && $prices['discount']->active)
         <h2 class="text-6xl font-display mb-8 leading-none text-white text-opacity-90">
-            {{ $prices['discount']->active }}
+            {{ $prices['discount']->name }}
         </h2>
         <div class="block text-xl md:text-2xl font-semibold leading-relaxed text-white text-opacity-90">
             Get {{ $prices['discount']->percentage }}% off on the entire ebook for the next
