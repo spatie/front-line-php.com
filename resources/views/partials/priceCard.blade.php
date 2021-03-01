@@ -47,7 +47,7 @@
                 @endif
 
                 <div class="text-center z-10 -mt-3 -mb-3">
-                    <a href="https://spatie.be/products/front-line-php">
+                    <a href="{{spatieUrl('https://spatie.be/products/front-line-php')}}">
                         <x-button icon="fas fa-play" :primary=true>
                             Buy Ebook
                         </x-button>
@@ -61,7 +61,7 @@
                             </li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> Available in PDF and EPUB</li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> More than a dozen <a
-                                    class="markup-link font-semibold" href="https://spatie.be/videos/front-line-php">free
+                                    class="markup-link font-semibold" href="{{spatieUrl('https://spatie.be/videos/front-line-php')}}">free
                                     videos</a></li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> A free <a
                                     class="markup-link font-semibold" href="{{ route("cheat-sheet") }}">cheat sheet</a>

@@ -15,7 +15,7 @@
         <div class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
             Just launched!
         </div>
-        
+
         <div class="grid md:grid-cols-2 gap-8">
             <div class="md:pr-12">
                 <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-none">
@@ -27,7 +27,7 @@
                     with PHP 8
                 </p>
             </div>
-            
+
             <div class="md:-mt-24 lg:-mt-24 pt-2">
             @include('partials.priceCard')
             </div>
@@ -73,7 +73,7 @@
                 </p>
 
                 <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">
-                    Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a> &amp; <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from <a class="bg-none" href="https://spatie.be">Spatie</a>.
+                    Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a> &amp; <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from <a class="bg-none" href="{{spatieUrl('https://spatie.be')}}">Spatie</a>.
                 </p>
             </div>
         </div>
@@ -188,16 +188,16 @@
                 </h3>
 
                 <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li><a href="https://spatie.be/videos/front-line-php/the-match-expression">The match expression</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/adding-meta-data-using-attributes">Adding meta data using attributes</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/promoted-properties">Promoted properties</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/named-arguments">Named arguments</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/union-types">Union types</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/the-nullsafe-operator">The nullsafe operator</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/improved-exceptions">Improved exceptions</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/object-classnames">Object classnames</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/the-stringable-interface">The stringable interface</a></li>
-                    <li><a href="https://spatie.be/videos/front-line-php/three-new-string-functions">Three new string functions</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/the-match-expression') }}">The match expression</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/adding-meta-data-using-attributes') }}">Adding meta data using attributes</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/promoted-properties') }}">Promoted properties</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/named-arguments') }}">Named arguments</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/union-types') }}">Union types</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/the-nullsafe-operator') }}">The nullsafe operator</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/improved-exceptions') }}">Improved exceptions</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/object-classnames') }}">Object classnames</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/the-stringable-interface') }}">The stringable interface</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/three-new-string-functions') }}">Three new string functions</a></li>
                 </ol>
             </div>
 
@@ -207,7 +207,7 @@
                 </h3>
 
                 <ol start=11 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li><a href="https://spatie.be/videos/front-line-php/automatically-upgrading-your-code-to-php-8-using-rector">Automatically upgrading your code to PHP 8 using Rector</a></li>
+                    <li><a href="{{ spatieUrl('https://spatie.be/videos/front-line-php/automatically-upgrading-your-code-to-php-8-using-rector') }}">Automatically upgrading your code to PHP 8 using Rector</a></li>
                 </ol>
                 <div class="mt-8">And <strong>more to come</strong>…</div>
             </div>

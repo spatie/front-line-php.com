@@ -41,7 +41,7 @@
 
     <div class="flex justify-end">
         <div class="flex flex-col items-end">
-            <a href="https://spatie.be/products/front-line-php">
+            <a href="{{ spatieUrl('https://spatie.be/products/front-line-php') }}">
                 <x-button icon="fas fa-play" :large="true" :primary=true>
                     Buy Ebook
                 </x-button>
