@@ -8,7 +8,7 @@
 $object<span class="hljs-keyword">::class</span>;</code></pre>
         </x-card>
 
-        <x-card id="format-numeric-values" title="Numeric Values" level="2" php="8.0">
+        <x-card id="format-numeric-values" title="Numeric Values" level="2" php="7.4">
             <p>Use the <code>_</code> operator to format numeric values:</p>
 
 <pre><code class="language-php hljs php">$price = <span class="hljs-number">100</span>_10;
