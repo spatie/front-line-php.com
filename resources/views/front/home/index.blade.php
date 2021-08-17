@@ -215,6 +215,75 @@
         </div>
     </section>
 
+    <section class="mt-24 mb-24">
+            <h3 class="text-3xl text-center font-display leading-none font-semibold text-xl">
+                Related resources
+            </h3>
+
+            <div class="mt-8 layout grid md:grid-cols-4 gap-x-20 gap-y-10 ">
+                <a href="https://testing-laravel.com/" class="group max-w-xs markup-links">
+                    <div
+                        class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
+                        <img width="750 " height="900" alt="Testing Laravel " src="images/testing-laravel.jpg">
+                    </div>
+                    <div class="pt-6 px-2 text-xs">
+                        <p class="leading-relaxed">
+                            A new video course to learn how to write quality tests in Pest and PHPUnit
+                        </p>
+                        <p class="mt-2">
+                            <span class="markup-link-hover font-semibold">testing-laravel.com</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="https://event-sourcing-laravel.com"  class="group max-w-xs markup-links">
+                    <div
+                        class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
+                        <img width="750 " height="900" alt="Front Line PHP" src="images/event-sourcing.jpg">
+                    </div>
+                    <div class="pt-6 px-2 text-xs">
+                        <p class="leading-relaxed">
+                            Learn how to implement Event Sourcing in large Laravel applications in this extended course by Brent.
+                        </p>
+                        <p class="mt-2">
+                            <span class="markup-link-hover font-semibold">event-sourcing-laravel.com</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="https://laravel-beyond-crud.com" class="group max-w-xs markup-links">
+                    <div
+                        class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
+                        <img width="750 " height="900" alt="Laravel Beyond Crud" src="images/crud.jpg">
+                    </div>
+                    <div class="pt-6 px-2 text-xs">
+                        <p class="leading-relaxed">
+                            Learn how to build larger-than-average Laravel applications and maintain them for years to
+                            come.
+                        </p>
+                        <p class="mt-2">
+                            <span class="markup-link-hover font-semibold">laravel-beyond-crud.com</span>
+                        </p>
+                    </div>
+                </a>
+                
+
+                <a href="https://laravelpackage.training" class="group max-w-xs markup-links">
+                    <div
+                        class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
+                        <img width="750 " height="900" alt="Laravel package Training" src="images/packagetraining.jpg">
+                    </div>
+                    <div class="pt-6 px-2 text-xs">
+                        <p class="leading-relaxed">
+                            Watch how to create a Laravel package and become the next package maestro.
+                        </p>
+                        <p class="mt-2">
+                            <span class="markup-link-hover font-semibold">laravelpackage.training</span>
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
     @include('partials.cta-promo')
 </main>
 

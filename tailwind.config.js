@@ -79,6 +79,10 @@ module.exports = {
         opacity: ["responsive", "hover", "focus", "group-hover"],
         backgroundColor: ({ after }) => after(['target']),
         boxShadow: ({ after }) => after(['target']),
+        translate: ["group-hover", "active"],
+        scale: ["group-hover"],
+        zIndex: ["hover"],
+        
     },
     plugins: [
         plugin(function({ addVariant, e }) {
