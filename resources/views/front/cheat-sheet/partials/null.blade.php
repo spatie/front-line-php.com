@@ -12,9 +12,11 @@
 
             <div class="flex items-center">
                 <x-tag class="mr-2">7.4</x-tag>
-                You can use the null coalescing
-                <em>assignment</em> operator to write the value into the original variable when it's
-                <code>null</code>:
+                <div>
+                    You can use the null coalescing
+                    <em>assignment</em> operator to write the value into the original variable when it's
+                    <code>null</code>:
+                </div>
             </div>
 
             <pre><code class="language-php hljs php">$temporaryPaymentDate = $invoice-&gt;<span class="hljs-highlight  prop">paymentDate</span> ??= <span class="hljs-highlight  type">Date</span>::<span class="hljs-highlight  prop">now</span>();
