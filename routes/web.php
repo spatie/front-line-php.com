@@ -2,10 +2,12 @@
 
 use App\Http\Front\Controllers\HomeController;
 use App\Http\Front\Controllers\SubscribeToEmailListController;
+use App\Http\Front\Controllers\VideosController;
 use Illuminate\Support\Facades\Route;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
 Route::get('/', HomeController::class);
+Route::get('/videos/{slug}', VideosController::class);
 
 Route::post('subscribe', SubscribeToEmailListController::class)->middleware(ProtectAgainstSpam::class);
 
