@@ -16,7 +16,7 @@ class SubscribeToEmailListController
 
         $response = Http::post("https://spatie.be/mailcoach/subscribe/" .config('services.mailcoach.subscription_uuid'), [
             'email' => $request->email,
-            'tags' => 'front-line-php-waiting-list',
+            'tags' => 'front-line-videos',
         ]);
 
         if (! $response->successful()) {
@@ -25,7 +25,7 @@ class SubscribeToEmailListController
             throw new Exception('Could not subscribe');
         }
 
-        flash()->success('Thanks for your interest! We will keep you posted with updates on the course.');
+        flash()->success("You've been successfully subscribed, you can expect the first video to arrive in your mailbox within a few minutes.");
 
         return back();
     }

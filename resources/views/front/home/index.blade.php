@@ -37,8 +37,15 @@
 </header>
 
 <main class="mx-auto max-w-5xl px-4 sm:px-16 mt-16" style="background-image: linear-gradient(to top, #fff 20%, #daf1f5)">
+
+    <section class="-mt-16 mb-24">
+        <h2>New: PHP 8.1</h2>
+
+        @include('partials.newsletter')
+    </section>
+
     <section class="grid md:grid-cols-2 gap-8">
-        <div class="-mt-16">
+        <div class="">
             <a class="block" href="{{ route('object-oriented') }}">
                 <img alt="Front Line PHP" srcset="/images/cover-1200.jpg 1200w, /images/cover-600.jpg 600w" sizes="500px, (min-width:768px) 45vw" src="/images/cover-1200.jpg" class="mx-auto w-full max-w-xl shadow-2xl">
                 <div class="absolute top-0 w-full flex justify-center -mt-6">
@@ -49,7 +56,7 @@
             </a>
         </div>
 
-        <div class="md:-mt-16 pb-16" x-data="{ open: false }">
+        <div class="pb-16" x-data="{ open: false }">
             <div class="w-full bg-black group cursor-hand" @click="open = true">
                 <img srcset="/images/intro-1600.jpg 1600w, /images/intro-800.jpg 800w" sizes="100vw, (min-width:768px) 45vw" src="/images/intro-1600.jpg" class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" alt="Video still">
                 <div class="absolute -mt-6 top-0 w-full flex items-center justify-center">
@@ -264,7 +271,7 @@
                         </p>
                     </div>
                 </a>
-                
+
 
                 <a href="https://laravelpackage.training" class="group max-w-xs markup-links">
                     <div
