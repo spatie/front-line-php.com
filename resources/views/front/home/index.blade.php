@@ -12,8 +12,17 @@
     </div>
 
     <div class="mx-auto max-w-5xl px-4 sm:px-16 py-16">
-        <div class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
-            Lowered price
+        <div x-data="{
+            scroll: () => {
+                window.scrollTo({
+                    top: document.getElementById('update81').getBoundingClientRect().top - 50,
+                    left: 0,
+                    behavior: 'smooth'
+                  });
+            }
+        }" 
+        class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
+            <a href="#" @click="scroll">PHP 8.1 update</a>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
@@ -24,7 +33,7 @@
                 <p class="mt-2 font-semibold text-3xl sm:text-4xl md:text-3xl lg:text-4xl leading-snug">
                     Building modern applications
                     <br>
-                    with PHP 8
+                    with PHP 8.1
                 </p>
             </div>
 
@@ -36,12 +45,12 @@
 
 </header>
 
-<main class="mx-auto max-w-5xl px-4 sm:px-16 mt-16" style="background-image: linear-gradient(to top, #fff 20%, #daf1f5)">
+<main   class="mx-auto max-w-5xl px-4 sm:px-16 mt-16" style="background-image: linear-gradient(to top, #fff 20%, #daf1f5)">
 
-    <section class="-mt-16 mb-24">
-        <h2>New: PHP 8.1</h2>
-
-        @include('partials.newsletter')
+    <section id="update81" class="mt-48 mb-32 relative">
+        <div class="-mt-24 pt-2">
+            @include('partials.updateCard')
+        </div>
     </section>
 
     <section class="grid md:grid-cols-2 gap-8">
@@ -76,7 +85,7 @@
 
             <div class="md:ml-8 mt-24">
                 <p class="text-3xl font-semibold">
-                    An <span class="marker">ebook</span> on cutting edge tactics in PHP 8, accompanied by <span class="marker">videos</span> and practical examples.
+                    An <span class="marker">ebook</span> on cutting edge tactics in PHP 8.1, accompanied by <span class="marker">videos</span> and practical examples.
                 </p>
 
                 <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">

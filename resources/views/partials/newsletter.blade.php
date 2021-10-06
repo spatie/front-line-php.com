@@ -1,22 +1,23 @@
+<p class="w-full mt-4">
+    <span class="font-semibold">Subscribe now</span> and get a <span class="font-semibold">daily</span> PHP 8.1 video for the coming week
+</p>
+
 <form action="{{ action(\App\Http\Front\Controllers\SubscribeToEmailListController::class) }}"
     method="post"
     accept-charset="utf-8"
-    class="flex mt-12 bg-white"
+    class="flex flex-wrap sm:flex-no-wrap mt-4 w-full bg-white"
 >
     @csrf
     @honeypot
 
-    <input type="email" id="email" name="email" aria-label="Email" required placeholder="Email" class="input flex-grow px-3 text-lg">
-    <div class="moving-button">
-        <button type="submit" class="button">
+    <input type="email" id="email" name="email" aria-label="Email" required placeholder="Email" class="input flex-auto px-3 text-lg">
+    <div class="w-full sm:w-auto text-center">
+        <button type="submit" class="button bg-yellow-500 w-full justify-center text-black">
             Subscribe
         </button>
     </div>
 </form>
 
-<div class="mt-2 text-sm text-white opacity-50">
-    No spam — we won't sell your email.
-</div>
 
 <div x-data="{ open: true }" x-show="open">       
     @if(flash()->message)
