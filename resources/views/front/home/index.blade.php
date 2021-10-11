@@ -12,8 +12,17 @@
     </div>
 
     <div class="mx-auto max-w-5xl px-4 sm:px-16 py-16">
-        <div class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
-            Lowered price
+        <div x-data="{
+            scroll: () => {
+                window.scrollTo({
+                    top: document.getElementById('update81').getBoundingClientRect().top - 50,
+                    left: 0,
+                    behavior: 'smooth'
+                  });
+            }
+        }" 
+        class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
+            <a href="#" @click="scroll">PHP 8.1 update</a>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
@@ -24,7 +33,7 @@
                 <p class="mt-2 font-semibold text-3xl sm:text-4xl md:text-3xl lg:text-4xl leading-snug">
                     Building modern applications
                     <br>
-                    with PHP 8
+                    with PHP 8.1
                 </p>
             </div>
 
@@ -36,9 +45,16 @@
 
 </header>
 
-<main class="mx-auto max-w-5xl px-4 sm:px-16 mt-16" style="background-image: linear-gradient(to top, #fff 20%, #daf1f5)">
+<main   class="mx-auto max-w-5xl px-4 sm:px-16 mt-16" style="background-image: linear-gradient(to top, #fff 20%, #daf1f5)">
+
+    <section id="update81" class="mt-48 mb-32 relative">
+        <div class="-mt-24 pt-2">
+            @include('partials.updateCard')
+        </div>
+    </section>
+
     <section class="grid md:grid-cols-2 gap-8">
-        <div class="-mt-16">
+        <div class="">
             <a class="block" href="{{ route('object-oriented') }}">
                 <img alt="Front Line PHP" srcset="/images/cover-1200.jpg 1200w, /images/cover-600.jpg 600w" sizes="500px, (min-width:768px) 45vw" src="/images/cover-1200.jpg" class="mx-auto w-full max-w-xl shadow-2xl">
                 <div class="absolute top-0 w-full flex justify-center -mt-6">
@@ -49,7 +65,7 @@
             </a>
         </div>
 
-        <div class="md:-mt-16 pb-16" x-data="{ open: false }">
+        <div class="pb-16" x-data="{ open: false }">
             <div class="w-full bg-black group cursor-hand" @click="open = true">
                 <img srcset="/images/intro-1600.jpg 1600w, /images/intro-800.jpg 800w" sizes="100vw, (min-width:768px) 45vw" src="/images/intro-1600.jpg" class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" alt="Video still">
                 <div class="absolute -mt-6 top-0 w-full flex items-center justify-center">
@@ -69,7 +85,7 @@
 
             <div class="md:ml-8 mt-24">
                 <p class="text-3xl font-semibold">
-                    An <span class="marker">ebook</span> on cutting edge tactics in PHP 8, accompanied by <span class="marker">videos</span> and practical examples.
+                    An <span class="marker">ebook</span> on cutting edge tactics in PHP 8.1, accompanied by <span class="marker">videos</span> and practical examples.
                 </p>
 
                 <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">
@@ -264,7 +280,7 @@
                         </p>
                     </div>
                 </a>
-                
+
 
                 <a href="https://laravelpackage.training" class="group max-w-xs markup-links">
                     <div
