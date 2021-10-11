@@ -1,4 +1,4 @@
-<section class="flex justify-center -mt-12">
+<section class="flex justify-center -mt-12"  id="php-81">
     <div class="max-w-xl w-full">
         <div class="z-10 flex-grow shadow-2xl">
             <div class="bg-yellow-500">
@@ -10,14 +10,13 @@
                     </div>
                 </div>
 
-            
+
                 <div class=" py-8 px-12 flex flex-wrap  bg-white">
                     <div>
                         <ul class=" leading-relaxed">
-                            <li><i class="fas fa-check text-xs text-blue-500"></i> <span class="font-semibold"> 6 new</span> videos</li>
-                            <li><i class="fas fa-check text-xs text-blue-500"></i><span class="font-semibold"> Updates</span> to existing chapters</li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> <span class="font-semibold">6 brand new</span> chapters</li>
-                            <li><i class="fas fa-check text-xs text-blue-500"></i><span class="font-semibold"> Free</span> for all existing users</li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i><span class="font-semibold"> Updates</span> to existing chapters</li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i><span class="font-semibold"> Free</span> for everyone who already bought the course</li>
                         </ul>
                     </div>
                 </div>
