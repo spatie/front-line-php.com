@@ -152,7 +152,7 @@
 /* Link styles */
 
 .markup-links a,
-.markup-links span,
+.markup-links span, 
 .markup-link {
     background-image: linear-gradient(to top, theme('colors.yellow.500') 0%, theme('colors.yellow.500') 4px, transparent 5px, transparent 100%);
     background-position: 0 0;
