@@ -6,7 +6,7 @@
                     <div class=" mt-4">
                         <h1 class="font-bold text-4xl sm:text-5xl whitespace-no-wrap">PHP 8.1 Update</h1>
 
-                        <h2 class="font-bold text-xl sm:text-2xl mt-4 whitespace-no-wrap">Coming this November</h2>
+                        <h2 class="font-bold text-xl sm:text-2xl mt-4 whitespace-no-wrap">Coming November 22</h2>
                     </div>
                 </div>
 
