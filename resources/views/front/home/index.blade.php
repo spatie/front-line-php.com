@@ -236,8 +236,8 @@
                 Related resources
             </h3>
 
-            <div class="mt-8 layout grid md:grid-cols-4 gap-x-20 gap-y-10 ">
-                <a href="https://testing-laravel.com/" class="group max-w-xs markup-links">
+            <div class="mt-8 layout grid md:grid-cols-4 gap-x-20 gap-y-10">
+                <a href="https://testing-laravel.com/" class="group max-w-xs  markup-links ">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
                         <img width="750 " height="900" alt="Testing Laravel " src="images/testing-laravel.jpg">
@@ -247,7 +247,7 @@
                             A new video course to learn how to write quality tests in Pest and PHPUnit
                         </p>
                         <p class="mt-2">
-                            <span class="markup-link-hover font-semibold">testing-laravel.com</span>
+                            <span class="markup-link-hover markup-link  font-semibold">testing-laravel.com</span>
                         </p>
                     </div>
                 </a>
@@ -261,7 +261,7 @@
                             Learn how to implement Event Sourcing in large Laravel applications in this extended course by Brent.
                         </p>
                         <p class="mt-2">
-                            <span class="markup-link-hover font-semibold">event-sourcing-laravel.com</span>
+                            <span class="markup-link-hover  markup-link  font-semibold">event-sourcing-laravel.com</span>
                         </p>
                     </div>
                 </a>
@@ -276,7 +276,7 @@
                             come.
                         </p>
                         <p class="mt-2">
-                            <span class="markup-link-hover font-semibold">laravel-beyond-crud.com</span>
+                            <span class="markup-link-hover  markup-link  font-semibold">laravel-beyond-crud.com</span>
                         </p>
                     </div>
                 </a>
@@ -292,7 +292,7 @@
                             Watch how to create a Laravel package and become the next package maestro.
                         </p>
                         <p class="mt-2">
-                            <span class="markup-link-hover font-semibold">laravelpackage.training</span>
+                            <span class="markup-link-hover  markup-link  font-semibold">laravelpackage.training</span>
                         </p>
                     </div>
                 </a>

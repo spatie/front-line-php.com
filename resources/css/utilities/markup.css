@@ -48,10 +48,6 @@
     @apply border-l-4;
 }
 
-.markup-link:hover {
-    background-image: linear-gradient(to right, #e6a9a1cc 0%, #e6a9a1cc 100%);
-    background-size: 200% 1ch;
-}
 
 /* Header styles */
 
@@ -152,7 +148,6 @@
 /* Link styles */
 
 .markup-links a,
-.markup-links span,
 .markup-link {
     background-image: linear-gradient(to top, theme('colors.yellow.500') 0%, theme('colors.yellow.500') 4px, transparent 5px, transparent 100%);
     background-position: 0 0;
@@ -166,7 +161,7 @@
     background-position: 1em 0px;
 }
 
-.markup-links:hover span{
+.markup-links:hover .markup-link{
     background-position: 1em 0px;
 }
 
