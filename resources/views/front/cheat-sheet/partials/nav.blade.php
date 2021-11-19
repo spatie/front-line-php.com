@@ -15,6 +15,7 @@
             <li><a class="hover:opacity-75" href="#trailing-commas">Trailing Commas</a></li>
         </ul>
     </li>
+    <li><a class="hover:opacity-75" href="#enums">Enums</a></li>
     <li><a class="hover:opacity-75" href="#exceptions">Exceptions</a></li>
     <li><a class="hover:opacity-75" href="#match-expression">Match Expression</a></li>
     <li>

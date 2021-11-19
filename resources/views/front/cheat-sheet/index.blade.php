@@ -45,6 +45,8 @@
 
                 @include('front.cheat-sheet.partials.cosmetics')
 
+                @include('front.cheat-sheet.partials.enums')
+                
                 @include('front.cheat-sheet.partials.exceptions')
 
                 @include('front.cheat-sheet.partials.match')
