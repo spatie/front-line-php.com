@@ -44,6 +44,29 @@
     }
 }</code></pre>
         </x-card>
+
+
+
+        <x-card id="new-in-initializers" title="Using new in initializers" class="lg:row-span-3" php="8.1">
+
+            PHP 8.1 allows you to use the <span class="hljs-highlight keyword">new</span> keyword in function definitions as a default parameter, as well as in attribute arguments and other places.
+
+            <pre><code class="language-php hljs php">class MyController {
+     public function __construct(
+         <span class="hljs-highlight  keyword">private</span> <span class="hljs-highlight  type">Logger</span> <span class="hljs-highlight  prop">$logger</span> = <span class="hljs-highlight  keyword">new</span> <span class="hljs-highlight  type">NullLogger</span>(),
+     ) {}
+ }
+                </code></pre>
+
+            This also means that nested attributes are a thing now:
+
+            <pre><code class="language-php hljs php">#[<span class="hljs-highlight  type">Assert\All</span>(
+     new <span class="hljs-highlight  type">Assert\NotNull</span>,
+     new <span class="hljs-highlight  type">Assert\Length</span>(<span class="hljs-highlight  prop">max</span>: 6),
+ <span class="hljs-highlight  comment">)]</span>
+                </code></pre>
+        </x-card>
+
         <x-card id="read-only properties" title="Read only properties" class="lg:row-span-3" php="8.1">
 
             Properties can be marked readonly.
@@ -56,6 +79,5 @@
 
             Once a readonly property is set, it cannot change ever again.
         </x-card>
-
     </div>
 </x-card>
