@@ -43,6 +43,8 @@
 
                 @include('front.cheat-sheet.partials.attributes')
 
+                @include('front.cheat-sheet.partials.closures')
+
                 @include('front.cheat-sheet.partials.cosmetics')
 
                 @include('front.cheat-sheet.partials.enums')
@@ -59,7 +61,7 @@
 
                 @include('front.cheat-sheet.partials.properties')
 
-                @include('front.cheat-sheet.partials.short-closures')
+
 
                 @include('front.cheat-sheet.partials.types')
 

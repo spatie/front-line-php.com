@@ -7,6 +7,8 @@
         </ul>
     </li>
     <li><a class="hover:opacity-75" href="#attributes">Attributes</a></li>
+    <li><a class="hover:opacity-75" href="#closures">Closures</a></li>
+
     <li>
         <a class="hover:opacity-75" href="#cosmetics">Cosmetics</a>
         <ul class="pl-2 my-1 space-y-1 border-l border-black text-xs font-normal">
