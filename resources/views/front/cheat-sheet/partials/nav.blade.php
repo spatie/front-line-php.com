@@ -33,7 +33,7 @@
             <li><a class="hover:opacity-75" href="#preloading">Preloading</a></li>
         </ul>
     </li>
-    <li><a class="hover:opacity-75" href="#property-promotion">Property Promotion</a></li>
+    <li><a class="hover:opacity-75" href="#properties">Properties</a></li>
     <li><a class="hover:opacity-75" href="#short-closures">Short Closures</a></li>
     <li>
         <a class="hover:opacity-75" href="#types">Types</a>

@@ -46,7 +46,7 @@
                 @include('front.cheat-sheet.partials.cosmetics')
 
                 @include('front.cheat-sheet.partials.enums')
-                
+
                 @include('front.cheat-sheet.partials.exceptions')
 
                 @include('front.cheat-sheet.partials.match')
@@ -57,7 +57,7 @@
 
                 @include('front.cheat-sheet.partials.performance')
 
-                @include('front.cheat-sheet.partials.property-promotion')
+                @include('front.cheat-sheet.partials.properties')
 
                 @include('front.cheat-sheet.partials.short-closures')
 
