@@ -149,15 +149,15 @@
                     <li><a href="{{ route('dealing-with-null') }}">PHP's Type System</a></li>
                     <li>Static Analysis</li>
                     <li>Property Promotion</li>
-                    <li>Readonly Properties</li>
+                    <li>Readonly Properties <x-tag>8.1</x-tag></li>
                     <li>Named Arguments</li>
                     <li>Attributes</li>
-                    <li>Enums</li>
+                    <li>Enums <x-tag>8.1</x-tag></li>
                     <li>Short Closures</li>
-                    <li>First-Class Callables</li>
+                    <li>First-Class Callables <x-tag>8.1</x-tag></li>
                     <li>Working With Arrays</li>
                     <li>Match</li>
-                    <li>New in Initializers</li>
+                    <li>New in Initializers <x-tag>8.1</x-tag></li>
                 </ol>
             </div>
 
@@ -190,9 +190,9 @@
                     <li>Internals</li>
                     <li>Type Variance</li>
                     <li>Async PHP</li>
-                    <li>Fibers</li>
+                    <li>Fibers <x-tag>8.1</x-tag></li>
                     <li>Event driven development</li>
-                    <li>Static Analysers in Practice</li>
+                    <li>Static Analysers in Practice  <x-tag>New</x-tag></li>
                     <li><a href="{{ route('cheat-sheet') }}">Cheat Sheet</a></li>
                 </ol>
             </div>
