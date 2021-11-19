@@ -19,6 +19,12 @@
             </ul>
         </x-card>
 
+        <x-card id="intersection-types" title="Intersection Types" level="2" php="8.1">
+            <p>Combine several types into one intersection, which means that whatever input must match all of the given types</p>
+
+            <pre><code class="language-php hljs php">public function url(<span class="hljs-highlight  type">WithId</span>&<span class="hljs-highlight  type">WithSlug</span> $obj): <span class="hljs-highlight  type">string</span>;</code></pre>
+        </x-card>
+
         <x-card id="typed-properties" title="Typed properties" level="2" class="row-span-2" php="7.4">
             <p>Add types to your class properties:</p>
 
@@ -44,5 +50,7 @@ $offer-&gt;<span class="hljs-highlight  prop">totalPrice</span>; <span class="hl
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-highlight  type">int|string</span> $id)</span></span>;
 }</code></pre>
         </x-card>
+
+
     </div>
 </x-card>

@@ -39,6 +39,7 @@
         <a class="hover:opacity-75" href="#types">Types</a>
         <ul class="pl-2 my-1 space-y-1 border-l border-black text-xs font-normal">
             <li><a class="hover:opacity-75" href="#built-in-types">Built-in Types</a></li>
+            <li><a class="hover:opacity-75" href="#intersection-types">Intersection Types</a></li>
             <li><a class="hover:opacity-75" href="#typed-properties">Typed Properties</a></li>
             <li><a class="hover:opacity-75" href="#union-types">Union Types</a></li>
         </ul>
