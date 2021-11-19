@@ -2,7 +2,7 @@
 
 @section('title', 'Privacy and cookie policy')
 
-@section('description', 'Privacy & cookie policy for Front Line PHP — Building modern applications with PHP 8')
+@section('description', 'Privacy & cookie policy for Front Line PHP — Building modern applications with PHP 8.1')
 
 @section('article')
 

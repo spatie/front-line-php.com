@@ -1,8 +1,8 @@
 @extends('front.layouts.master')
 
-@section('title', 'Building modern web applications with PHP 8')
+@section('title', 'Building modern web applications with PHP 8.1')
 
-@section('description', 'Building modern web applications with PHP 8 by Brent Roose, accompanied by videos by Freek Van der Herten.')
+@section('description', 'Building modern web applications with PHP 8.1 by Brent Roose, accompanied by videos by Freek Van der Herten.')
 
 @section('content')
 
@@ -22,7 +22,7 @@
             }
         }" 
         class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
-            <a href="#/" @click="scroll">PHP 8.1 update</a>
+            <a href="#/" @click="scroll">Revised for PHP 8.1</a>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
@@ -144,16 +144,20 @@
                 </h3>
 
                 <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li>PHP today</li>
-                    <li>New versions</li>
-                    <li><a href="{{ route('dealing-with-null') }}">PHP's type system</a></li>
-                    <li>Static analysis</li>
-                    <li>Property promotion</li>
-                    <li>Named arguments</li>
+                    <li>PHP Today</li>
+                    <li>New Versions</li>
+                    <li><a href="{{ route('dealing-with-null') }}">PHP's Type System</a></li>
+                    <li>Static Analysis</li>
+                    <li>Property Promotion</li>
+                    <li>Readonly Properties</li>
+                    <li>Named Arguments</li>
                     <li>Attributes</li>
-                    <li>Short closures</li>
-                    <li>Working with arrays</li>
+                    <li>Enums</li>
+                    <li>Short Closures</li>
+                    <li>First-Class Callables</li>
+                    <li>Working With Arrays</li>
                     <li>Match</li>
+                    <li>New in Initializers</li>
                 </ol>
             </div>
 
@@ -164,7 +168,7 @@
                 </h3>
 
                 <ol start=11 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li><a href="{{ route('object-oriented') }}">Object oriented PHP</a></li>
+                    <li><a href="{{ route('object-oriented') }}">Object Oriented PHP</a></li>
                     <li>MVC Frameworks</li>
                     <li>Dependency Injection</li>
                     <li>Collections</li>
@@ -180,13 +184,15 @@
                 </h3>
 
                 <ol start=16 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li>FFI</li>
-                    <li>JIT</li>
+                    <li>The JIT</li>
                     <li>Preloading</li>
+                    <li>FFI</li>
                     <li>Internals</li>
-                    <li>Type variance</li>
+                    <li>Type Variance</li>
                     <li>Async PHP</li>
+                    <li>Fibers</li>
                     <li>Event driven development</li>
+                    <li>Static Analysers in Practice</li>
                     <li><a href="{{ route('cheat-sheet') }}">Cheat Sheet</a></li>
                 </ol>
             </div>

@@ -2,7 +2,7 @@
 
 @section('title', 'Terms of use')
 
-@section('description', 'Terms of use for Front Line PHP — Building modern web applications with PHP 8')
+@section('description', 'Terms of use for Front Line PHP — Building modern web applications with PHP 8.1')
 
 @section('article')
 
