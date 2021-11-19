@@ -59,7 +59,7 @@
                             <li class="font-semibold"><i class="fas fa-check text-xs text-blue-500"></i> 250 pages of
                                 premium content
                             </li>
-                            <li><i class="fas fa-check text-xs text-blue-500"></i> Includes an <span class="font-semibold">PHP 8.1</span> update</li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i> Revised for <span class="font-semibold">PHP 8.1</span></li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> Available in PDF and EPUB</li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> More than a dozen <a
                                     class="markup-link font-semibold" href="{{spatieUrl('https://spatie.be/videos/front-line-php')}}">free
