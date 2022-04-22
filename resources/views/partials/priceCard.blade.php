@@ -62,7 +62,7 @@
                             <li><i class="fas fa-check text-xs text-blue-500"></i> Revised for <span class="font-semibold">PHP 8.1</span></li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> Available in PDF and EPUB</li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> More than a dozen <a
-                                    class="markup-link font-semibold" href="{{spatieUrl('https://spatie.be/videos/front-line-php')}}">free
+                                    class="markup-link font-semibold" href="{{spatieUrl('https://spatie.be/courses/front-line-php')}}">free
                                     videos</a></li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> A free <a
                                     class="markup-link font-semibold" href="{{ route("cheat-sheet") }}">cheat sheet</a>
