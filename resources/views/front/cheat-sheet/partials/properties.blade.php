@@ -69,15 +69,34 @@
 
         <x-card id="read-only properties" title="Read only properties" class="lg:row-span-3" php="8.1">
 
-            Properties can be marked readonly.
+            Properties can be marked readonly:
             <pre><code class="language-php hljs php"><span
                         class="hljs-keyword">class</span> Offer
  {
      public <span class="hljs-highlight  keyword">readonly</span> <span class="hljs-keyword type">?string</span> <span prop>$offerNumber</span> = null;
      public <span class="hljs-highlight  keyword">readonly</span> <span class="hljs-highlight  type">Money</span> <span class="hljs-highlight  prop">$totalPrice</span>;
+}
                 </code></pre>
 
+
             Once a readonly property is set, it cannot change ever again.
+
+            <div class="flex items-center mt-8">
+                <x-tag class="mr-2">8.2</x-tag>
+                <div>
+                    Classes can be completely readonly:
+                </div>
+            </div>
+
+            <pre><code class="language-php hljs php"><span class="hljs-highlight  keyword">readonly</span> <span
+                        class="hljs-keyword">class</span> Offer
+ {
+     public <span class="hljs-keyword type">?string</span> <span prop>$offerNumber</span> = null;
+     public <span class="hljs-highlight  type">Money</span> <span class="hljs-highlight  prop">$totalPrice</span>;
+}
+                </code></pre>
+
+            All properties of a class will become readonly, adding properties dynamically is impossible.
         </x-card>
     </div>
 </x-card>
