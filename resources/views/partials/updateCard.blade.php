@@ -12,7 +12,7 @@
                 <div class=" py-8 px-12 flex flex-wrap  bg-white">
                     <div>
                         <ul class=" leading-relaxed">
-                            <li><i class="fas fa-check text-xs text-blue-500"></i> A brand new chapter<span class="font-semibold">on PHP 8.2</span></li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i> A brand new chapter <span class="font-semibold">on PHP 8.2</span></li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i><span class="font-semibold"> Updates</span> to existing chapters</li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i><span class="font-semibold"> Free</span> for everyone who already bought the course</li>
                         </ul>
