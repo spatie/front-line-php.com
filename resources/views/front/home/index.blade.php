@@ -89,7 +89,7 @@
                 </p>
 
                 <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">
-                    Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a> &amp; <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from <a class="bg-none" href="{{spatieUrl('https://spatie.be')}}">Spatie</a>.
+                    Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a>, and <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from <a class="bg-none" href="{{spatieUrl('https://spatie.be')}}">Spatie</a>.
                 </p>
             </div>
         </div>
