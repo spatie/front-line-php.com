@@ -49,7 +49,7 @@
 
         <x-card id="new-in-initializers" title="Using new in initializers" class="lg:row-span-3" php="8.1">
 
-            PHP 8.1 allows you to use the <span class="hljs-highlight keyword">new</span> keyword in function definitions as a default parameter, as well as in attribute arguments and other places.
+            PHP 8.2 allows you to use the <span class="hljs-highlight keyword">new</span> keyword in function definitions as a default parameter, as well as in attribute arguments and other places.
 
             <pre><code class="language-php hljs php">class MyController {
      public function __construct(

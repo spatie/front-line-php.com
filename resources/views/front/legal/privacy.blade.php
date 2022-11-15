@@ -2,12 +2,12 @@
 
 @section('title', 'Privacy and cookie policy')
 
-@section('description', 'Privacy & cookie policy for Front Line PHP — Building modern applications with PHP 8.1')
+@section('description', 'Privacy & cookie policy for Front Line PHP — Building modern applications with PHP 8.2')
 
 @section('article')
 
 @markdown
-This the Front Line PHP privacy and cookie policy. Front Line PHP is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596. 
+This the Front Line PHP privacy and cookie policy. Front Line PHP is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596.
 
 Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://front-line-php.com](https://front-line-php.com/); by creating a Spatie account on URL [https://spatie.be/register](https://spatie.be/register), by contacting us by email/phone, by subscribing to our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
 

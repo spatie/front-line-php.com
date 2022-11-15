@@ -4,7 +4,7 @@
             <div class="bg-yellow-500">
                 <div class="text-center pt-4 pb-8 leading-none">
                     <div class=" mt-4">
-                        <h1 class="font-bold text-4xl sm:text-5xl whitespace-no-wrap">PHP 8.1 Update</h1>
+                        <h1 class="font-bold text-4xl sm:text-5xl whitespace-no-wrap">PHP 8.2 Update</h1>
                     </div>
                 </div>
 

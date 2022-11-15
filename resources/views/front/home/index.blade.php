@@ -1,8 +1,8 @@
 @extends('front.layouts.master')
 
-@section('title', 'Building modern web applications with PHP 8.1')
+@section('title', 'Building modern web applications with PHP 8.2')
 
-@section('description', 'Building modern web applications with PHP 8.1 by Brent Roose, accompanied by videos by Freek Van der Herten.')
+@section('description', 'Building modern web applications with PHP 8.2 by Brent Roose, accompanied by videos by Freek Van der Herten.')
 
 @section('content')
 
@@ -20,9 +20,9 @@
                     behavior: 'smooth'
                   });
             }
-        }" 
+        }"
         class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
-            <a href="#/" @click="scroll">Revised for PHP 8.1</a>
+            <a href="#/" @click="scroll">Revised for PHP 8.2</a>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
@@ -33,7 +33,7 @@
                 <p class="mt-2 font-semibold text-3xl sm:text-4xl md:text-3xl lg:text-4xl leading-snug">
                     Building modern applications
                     <br>
-                    with PHP 8.1
+                    with PHP 8.2
                 </p>
             </div>
 
@@ -85,7 +85,7 @@
 
             <div class="md:ml-8 mt-24">
                 <p class="text-3xl font-semibold">
-                    An <span class="marker">ebook</span> on cutting edge tactics in PHP 8.1, accompanied by <span class="marker">videos</span> and practical examples.
+                    An <span class="marker">ebook</span> on cutting edge tactics in PHP 8.2, accompanied by <span class="marker">videos</span> and practical examples.
                 </p>
 
                 <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">
@@ -167,7 +167,7 @@
                     Building With PHP
                 </h3>
 
-                <ol start=11 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
+                <ol start=15 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
                     <li><a href="{{ route('object-oriented') }}">Object Oriented PHP</a></li>
                     <li>MVC Frameworks</li>
                     <li>Dependency Injection</li>
@@ -183,7 +183,7 @@
                     PHP In Depth
                 </h3>
 
-                <ol start=16 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
+                <ol start=21 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
                     <li>The JIT</li>
                     <li>Preloading</li>
                     <li>FFI</li>
@@ -192,7 +192,8 @@
                     <li>Async PHP</li>
                     <li>Fibers <x-tag>8.1</x-tag></li>
                     <li>Event driven development</li>
-                    <li>Static Analysers in Practice  <x-tag>New</x-tag></li>
+                    <li>Static Analysers in Practice</li>
+                    <li>PHP 8.2 <x-tag>New</x-tag></li>
                     <li><a href="{{ route('cheat-sheet') }}">Cheat Sheet</a></li>
                 </ol>
             </div>
@@ -246,7 +247,7 @@
                     <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/the-never-type') }}">The Never Type</a></li>
 
 
-                </ol>            
+                </ol>
             </div>
 
         </div>
