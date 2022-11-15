@@ -1,5 +1,5 @@
 <p class="w-full mt-4">
-    <span class="font-semibold">Subscribe now</span> and get a video on a new PHP 8.1 feature every day: learn about enums, readonly properties, and much more.
+    <span class="font-semibold">Subscribe now</span> and get a video on a modern feature every day: learn about enums, readonly properties, and much more.
 </p>
 
 <form action="{{ action(\App\Http\Front\Controllers\SubscribeToEmailListController::class) }}"

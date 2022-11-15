@@ -63,7 +63,7 @@ $b = [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
 $result = [...$a, ...$b]; <span class="hljs-comment">// [1, 2, 3, 4]</span></code></pre>
 
             <div class="flex items-center">
-                <x-tag class="mr-2">8.1</x-tag> You can also spread arrays with textual keys starting from PHP 8.1
+                <x-tag class="mr-2">8.1</x-tag> You can also spread arrays with textual keys starting from PHP 8.2
             </div>
         </x-card>
     </div>
