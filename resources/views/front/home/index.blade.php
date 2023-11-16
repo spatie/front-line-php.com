@@ -1,8 +1,8 @@
 @extends('front.layouts.master')
 
-@section('title', 'Building modern web applications with PHP 8.2')
+@section('title', 'Building modern web applications with PHP 8.3')
 
-@section('description', 'Building modern web applications with PHP 8.2 by Brent Roose, accompanied by videos by Freek Van der Herten.')
+@section('description', 'Building modern web applications with PHP 8.3 by Brent Roose, accompanied by videos by Freek Van der Herten.')
 
 @section('content')
 
@@ -22,7 +22,7 @@
             }
         }"
         class="absolute left-0 top-0 ml-4 sm:ml-16 -mt-5 bg-yellow-500 px-8 py-2 font-bold whitespace-no-wrap text-xl">
-            <a href="#/" @click="scroll">Revised for PHP 8.2</a>
+            <a href="#/" @click="scroll">Revised for PHP 8.3</a>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
@@ -33,7 +33,7 @@
                 <p class="mt-2 font-semibold text-3xl sm:text-4xl md:text-3xl lg:text-4xl leading-snug">
                     Building modern applications
                     <br>
-                    with PHP 8.2
+                    with PHP 8.3
                 </p>
             </div>
 
@@ -85,7 +85,7 @@
 
             <div class="md:ml-8 mt-24">
                 <p class="text-3xl font-semibold">
-                    An <span class="marker">ebook</span> on cutting edge tactics in PHP 8.2, accompanied by <span class="marker">videos</span> and practical examples.
+                    An <span class="marker">ebook</span> on cutting edge tactics in PHP 8.3, accompanied by <span class="marker">videos</span> and practical examples.
                 </p>
 
                 <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">
@@ -193,7 +193,8 @@
                     <li>Fibers <x-tag>8.1</x-tag></li>
                     <li>Event driven development</li>
                     <li>Static Analysers in Practice</li>
-                    <li>PHP 8.2 <x-tag>New</x-tag></li>
+                    <li>PHP 8.2</li>
+                    <li>PHP 8.3 <x-tag>New</x-tag></li>
                     <li><a href="{{ route('cheat-sheet') }}">Cheat Sheet</a></li>
                 </ol>
             </div>

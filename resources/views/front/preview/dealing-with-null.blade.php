@@ -4,7 +4,7 @@
 
 @section('subtitle', 'Taken from Chapter "PHP\'s Type System"')
 
-@section('description', 'Dealing with null — Building modern applications with PHP 8.2')
+@section('description', 'Dealing with null — Building modern applications with PHP 8.3')
 
 @section('footer_cta')
     @include('partials.cta-promo')

@@ -6,7 +6,7 @@
     </h2>
     <div class="block text-xl md:text-2xl font-semibold leading-relaxed text-white text-opacity-90">
         Want to learn more about modern PHP?
-        Pick up Front Line PHP, An ebook on cutting edge tactics in PHP 8.2, accompanied by videos and practical examples.
+        Pick up Front Line PHP, An ebook on cutting edge tactics in PHP 8.3, accompanied by videos and practical examples.
     </div>
 
     <div class="flex justify-end">

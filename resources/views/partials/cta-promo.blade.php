@@ -35,7 +35,7 @@
             Front Line PHP
         </h2>
         <div class="block text-xl md:text-2xl font-semibold leading-relaxed text-white text-opacity-90">
-            Building modern applications with PHP 8.2
+            Building modern applications with PHP 8.3
         </div>
     @endif
 
