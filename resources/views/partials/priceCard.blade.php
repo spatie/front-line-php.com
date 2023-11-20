@@ -59,7 +59,7 @@
                             <li class="font-semibold"><i class="fas fa-check text-xs text-blue-500"></i> 250 pages of
                                 premium content
                             </li>
-                            <li><i class="fas fa-check text-xs text-blue-500"></i> Revised for <span class="font-semibold">PHP 8.2</span></li>
+                            <li><i class="fas fa-check text-xs text-blue-500"></i> Revised for <span class="font-semibold">PHP 8.3</span></li>
                             <li><i class="fas fa-check text-xs text-blue-500"></i> More than a dozen <a
                                     class="markup-link font-semibold" href="{{spatieUrl('https://spatie.be/courses/front-line-php')}}">free
                                     videos</a></li>
