@@ -6,7 +6,5 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    public function run()
-    {
-    }
+    public function run(): void {}
 }

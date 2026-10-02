@@ -2,9 +2,11 @@
 
 namespace App\Http\Front\Controllers;
 
+use Illuminate\Contracts\View\View;
+
 class VideosController
 {
-    public function __invoke(string $slug)
+    public function __invoke(string $slug): View
     {
         $videos = [
             '609789995-readonly-properties' => [
