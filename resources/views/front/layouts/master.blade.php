@@ -1,3 +1,4 @@
+@use('Spatie\PriceApi\SpatiePriceApi')
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,7 +36,9 @@
         <meta property="og:description"
             content="@yield('description')"/>
         <meta property="og:image" content="https://front-line-php.com/images/social-card.jpg"/>
-        
+
+        @include('partials.referrer')
+        {{ SpatiePriceApi::scripts() }}
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
     </head>
     <body class="overflow-x-hidden font-sans text-black">
