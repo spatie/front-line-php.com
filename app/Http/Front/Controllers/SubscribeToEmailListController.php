@@ -13,10 +13,8 @@ class SubscribeToEmailListController
     {
         $subscriptionUuid = config('services.mailcoach.subscription_uuid');
 
-        if (! $subscriptionUuid) {
-            flash()->error('Subscribing is not possible at the moment.');
-
-            return back();
+        if (! app()->environment('production') || ! $subscriptionUuid) {
+            return redirect()->action(HomeController::class, ['subscription-failed' => 1]);
         }
 
         $response = Http::post("https://spatie.be/mailcoach/subscribe/{$subscriptionUuid}", [
@@ -28,8 +26,6 @@ class SubscribeToEmailListController
             throw new Exception("Could not subscribe, Mailcoach responded with status {$response->status()}");
         }
 
-        flash()->success("You've been successfully subscribed, you can expect the first video to arrive in your mailbox within a few minutes.");
-
-        return back();
+        return redirect()->action(HomeController::class, ['subscribed' => 1]);
     }
 }

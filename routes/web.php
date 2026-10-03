@@ -17,3 +17,5 @@ Route::view('privacy', 'front.legal.privacy')->name('privacy');
 Route::view('cheat-sheet', 'front.cheat-sheet.index')->name('cheat-sheet');
 Route::view('object-oriented', 'front.preview.object-oriented')->name('object-oriented');
 Route::view('dealing-with-null', 'front.preview.dealing-with-null')->name('dealing-with-null');
+
+Route::get('robots.txt', fn () => response(file_get_contents(resource_path('robots.txt')))->header('Content-Type', 'text/plain'));
