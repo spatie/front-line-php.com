@@ -26,7 +26,7 @@
         <meta name="twitter:title" content="@yield('title')"/>
         <meta name="twitter:description"
         content="@yield('description')"/>
-        <meta name="twitter:image" content="https://front-line-php.com/images/social-card.jpg"/>
+        <meta name="twitter:image" content="{{ asset('images/social-card.jpg') }}"/>
 
         <meta property="og:site_name" content="Front Line PHP">
         <meta property="og:locale" content="en_US">
@@ -35,7 +35,7 @@
         <meta property="og:title" content="@yield('title')"/>
         <meta property="og:description"
             content="@yield('description')"/>
-        <meta property="og:image" content="https://front-line-php.com/images/social-card.jpg"/>
+        <meta property="og:image" content="{{ asset('images/social-card.jpg') }}"/>
 
         @include('partials.referrer')
         {{ SpatiePriceApi::scripts() }}

@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use App\Support\BucketAssets;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,5 +21,20 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('endmarkdown', function () {
             return 'HEREDOC); ?>';
         });
+
+        $this->serveAssetsFromBucket();
+    }
+
+    protected function serveAssetsFromBucket(): void
+    {
+        $bucketAssetsUrl = BucketAssets::url();
+
+        if (! $bucketAssetsUrl) {
+            return;
+        }
+
+        URL::useAssetOrigin($bucketAssetsUrl);
+
+        config()->set('app.mix_url', $bucketAssetsUrl);
     }
 }
