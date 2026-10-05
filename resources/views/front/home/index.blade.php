@@ -89,7 +89,7 @@
                 </p>
 
                 <p class="mt-12 text-xl font-semibold markup-links leading-relaxed">
-                    Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a>, and <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from <a class="bg-none" href="{{spatieUrl('https://spatie.be')}}">Spatie</a>.
+                    Brought to you by open source veterans <a href="https://twitter.com/brendt_gd">Brent Roose</a>, and <a href="https://twitter.com/freekmurze">Freek Van der Herten</a> from <a class="bg-none" href="https://spatie.be">Spatie</a>.
                 </p>
             </div>
         </div>
@@ -212,18 +212,18 @@
                 </h3>
 
                 <ol class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/the-match-expression') }}">The Match Expression</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/named-arguments') }}">Named Arguments</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/adding-meta-data-using-attributes') }}">Adding Meta Data using Attributes</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/promoted-properties') }}">Promoted Properties</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/union-types') }}">Union Types</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/the-nullsafe-operator') }}">The Nullsafe Operator</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/improved-exceptions') }}">Improved Exceptions</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/object-classnames') }}">Object Classnames</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/the-stringable-interface') }}">The Stringable Interface</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/three-new-string-functions') }}">Three New String Functions</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/exploring-weakmaps') }}">Exploring WeakMaps</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/trailing-commas-in-function-definitions') }}">Trailing Commas in Function Definitions</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/the-match-expression">The Match Expression</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/named-arguments">Named Arguments</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/adding-meta-data-using-attributes">Adding Meta Data using Attributes</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/promoted-properties">Promoted Properties</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/union-types">Union Types</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/the-nullsafe-operator">The Nullsafe Operator</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/improved-exceptions">Improved Exceptions</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/object-classnames">Object Classnames</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/the-stringable-interface">The Stringable Interface</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/three-new-string-functions">Three New String Functions</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/exploring-weakmaps">Exploring WeakMaps</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/trailing-commas-in-function-definitions">Trailing Commas in Function Definitions</a></li>
                 </ol>
             </div>
 
@@ -233,19 +233,19 @@
                 </h3>
 
                 <ol start=13 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/automatically-upgrading-your-code-to-php-8-using-rector') }}">Automatically upgrading your code to PHP 8 using Rector</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/automatically-upgrading-your-code-to-php-8-using-rector">Automatically upgrading your code to PHP 8 using Rector</a></li>
                 </ol>
 
                 <h3 class="mt-8 font-semibold text-xl">
                     <div class="text-3xl font-display leading-none">New Features in PHP 8.1</div>
                 </h3>
                 <ol start=14 class="grid gap-2 text-lg md:text-base mt-6 list-decimal pl-12 border-l-2 border-black leading-tight">
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/readonly-properties') }}">Readonly Properties</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/enums') }}">Enums</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/improvements-to-array-spreading') }}">Improvements to Array Spreading</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/first-class-callables') }}">First-class Callables</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/intersection-types') }}">Intersection Types</a></li>
-                    <li><a href="{{ spatieUrl('https://spatie.be/courses/front-line-php/the-never-type') }}">The Never Type</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/readonly-properties">Readonly Properties</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/enums">Enums</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/improvements-to-array-spreading">Improvements to Array Spreading</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/first-class-callables">First-class Callables</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/intersection-types">Intersection Types</a></li>
+                    <li><a href="https://spatie.be/courses/front-line-php/the-never-type">The Never Type</a></li>
 
 
                 </ol>
