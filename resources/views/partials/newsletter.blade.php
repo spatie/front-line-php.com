@@ -22,7 +22,7 @@
 <div x-data="{ open: true }" x-show="open">
     @if(($subscribed ?? false) || ($subscriptionFailed ?? false))
         <div class="fixed z-50 fix-z top-0 left-0 h-16 w-full flex items-center justify-center py-8 px-4 bg-green-500 border-b border-black border-opacity-50 shadow-xl md:text-xl text-white text-center">
-            <img srcset="{{ asset('images') }}/footer-2400.webp 2400w, {{ asset('images') }}/footer-1200.webp 1200w" sizes="100vw" src="{{ asset('images') }}/footer-2400.webp" class="absolute top-0 left-0 w-full h-full object-cover opacity-20">
+            <img srcset="{{ asset('images/footer-2400.webp') }} 2400w, {{ asset('images/footer-1200.webp') }} 1200w" sizes="100vw" src="{{ asset('images/footer-2400.webp') }}" class="absolute top-0 left-0 w-full h-full object-cover opacity-20">
             @if($subscribed ?? false)
                 <span>You've been successfully subscribed, you can expect the first video to arrive in your mailbox within a few minutes.</span>
             @else

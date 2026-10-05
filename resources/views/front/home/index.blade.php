@@ -56,7 +56,7 @@
     <section class="grid md:grid-cols-2 gap-8">
         <div class="">
             <a class="block" href="{{ route('object-oriented') }}">
-                <img alt="Front Line PHP" srcset="{{ asset('images') }}/cover-1200.webp 1200w, {{ asset('images') }}/cover-600.webp 600w" sizes="(min-width: 768px) 432px, 576px" src="{{ asset('images') }}/cover-1200.webp" class="mx-auto w-full max-w-xl shadow-2xl">
+                <img alt="Front Line PHP" srcset="{{ asset('images/cover-1200.webp') }} 1200w, {{ asset('images/cover-600.webp') }} 600w" sizes="(min-width: 768px) 432px, 576px" src="{{ asset('images/cover-1200.webp') }}" class="mx-auto w-full max-w-xl shadow-2xl">
                 <div class="absolute top-0 w-full flex justify-center -mt-6">
                     <x-button icon="fas fa-play">
                         Read sample
@@ -67,7 +67,7 @@
 
         <div class="pb-16" x-data="{ open: false }">
             <div class="w-full bg-black group cursor-hand" @click="open = true">
-                <img srcset="{{ asset('images') }}/intro-1600.webp 1600w, {{ asset('images') }}/intro-800.webp 800w" sizes="(min-width: 768px) 432px, 100vw" src="{{ asset('images') }}/intro-1600.webp" class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" alt="Video still">
+                <img srcset="{{ asset('images/intro-1600.webp') }} 1600w, {{ asset('images/intro-800.webp') }} 800w" sizes="(min-width: 768px) 432px, 100vw" src="{{ asset('images/intro-1600.webp') }}" class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" alt="Video still">
                 <div class="absolute -mt-6 top-0 w-full flex items-center justify-center">
                     <x-button icon="fas fa-play">
                         Watch intro
@@ -263,7 +263,7 @@
                 <a href="https://testing-laravel.com/" class="group max-w-xs  markup-links ">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
-                        <img width="576" height="691" alt="Testing Laravel " src="{{ asset('images') }}/testing-laravel.webp">
+                        <img width="576" height="691" alt="Testing Laravel " src="{{ asset('images/testing-laravel.webp') }}">
                     </div>
                     <div class="pt-6 px-2 text-xs">
                         <p class="leading-relaxed">
@@ -277,7 +277,7 @@
                 <a href="https://event-sourcing-laravel.com"  class="group max-w-xs markup-links">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
-                        <img width="576" height="691" alt="Front Line PHP" src="{{ asset('images') }}/event-sourcing.webp">
+                        <img width="576" height="691" alt="Front Line PHP" src="{{ asset('images/event-sourcing.webp') }}">
                     </div>
                     <div class="pt-6 px-2 text-xs">
                         <p class="leading-relaxed">
@@ -291,7 +291,7 @@
                 <a href="https://laravel-beyond-crud.com" class="group max-w-xs markup-links">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
-                        <img width="576" height="691" alt="Laravel Beyond Crud" src="{{ asset('images') }}/crud.webp">
+                        <img width="576" height="691" alt="Laravel Beyond Crud" src="{{ asset('images/crud.webp') }}">
                     </div>
                     <div class="pt-6 px-2 text-xs">
                         <p class="leading-relaxed">
@@ -308,7 +308,7 @@
                 <a href="https://laravelpackage.training" class="group max-w-xs markup-links">
                     <div
                         class="transform transition-transform duration-150 group-hover:shadow-2xl group-hover:-translate-y-1 shadow-lg bg-white p-4">
-                        <img width="576" height="691" alt="Laravel package Training" src="{{ asset('images') }}/packagetraining.webp">
+                        <img width="576" height="691" alt="Laravel package Training" src="{{ asset('images/packagetraining.webp') }}">
                     </div>
                     <div class="pt-6 px-2 text-xs">
                         <p class="leading-relaxed">
