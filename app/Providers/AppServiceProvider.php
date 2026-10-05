@@ -10,6 +10,11 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+    public function register(): void
+    {
+        $this->throwOnFailedAssetUploads();
+    }
+
     public function boot(): void
     {
         Model::unguard();
@@ -36,5 +41,14 @@ class AppServiceProvider extends ServiceProvider
         URL::useAssetOrigin($bucketAssetsUrl);
 
         config()->set('app.mix_url', $bucketAssetsUrl);
+    }
+
+    /**
+     * Laravel Cloud replaces the config of the disk of an attached bucket and
+     * turns off throwing, which would let a failed asset upload pass silently.
+     */
+    protected function throwOnFailedAssetUploads(): void
+    {
+        config()->set('filesystems.disks.assets.throw', true);
     }
 }
